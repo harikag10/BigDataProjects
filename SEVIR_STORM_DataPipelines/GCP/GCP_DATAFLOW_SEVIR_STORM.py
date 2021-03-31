@@ -195,7 +195,6 @@ def pipeline_exec():
   # RUNNER = 'DirectRunner'
   # else:
   RUNNER = 'DataflowRunner'
-  #read_credentials = beam.io.aws.Credentials(aws_access_key_id='AKIAJ4U3RHJLBU7Y23IA', aws_secret_access_key='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', region='us-east-2')
   p = beam.Pipeline(RUNNER, options=opts)
   classes = {
       'storm': Storm,
