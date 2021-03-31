@@ -1,0 +1,11 @@
+dev:
+
+  bucket: "edgarfile-storage"
+
+  filepath: "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/sec-edgar/call_transcripts"
+
+  downloadpath: "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar"
+
+  fetchpath: "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_download"
+
+  APIKey: "f91e8d2d0a74487dbec98f4b8b302711"

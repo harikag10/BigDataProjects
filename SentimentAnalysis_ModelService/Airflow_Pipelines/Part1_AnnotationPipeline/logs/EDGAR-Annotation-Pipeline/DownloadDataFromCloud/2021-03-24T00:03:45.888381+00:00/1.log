@@ -1,0 +1,23 @@
+[2021-03-23 17:04:10,050] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: EDGAR-Annotation-Pipeline.DownloadDataFromCloud 2021-03-24T00:03:45.888381+00:00 [queued]>
+[2021-03-23 17:04:10,054] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: EDGAR-Annotation-Pipeline.DownloadDataFromCloud 2021-03-24T00:03:45.888381+00:00 [queued]>
+[2021-03-23 17:04:10,055] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 17:04:10,055] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-23 17:04:10,055] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 17:04:10,061] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): DownloadDataFromCloud> on 2021-03-24T00:03:45.888381+00:00
+[2021-03-23 17:04:10,064] {standard_task_runner.py:52} INFO - Started process 42860 to run task
+[2021-03-23 17:04:10,072] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'EDGAR-Annotation-Pipeline', 'DownloadDataFromCloud', '2021-03-24T00:03:45.888381+00:00', '--job-id', '84', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/edgar_annotation.py', '--cfg-path', '/var/folders/_j/s8vbc0cs1fvgclq8hnvtq1wm0000gn/T/tmps88xbsye', '--error-file', '/var/folders/_j/s8vbc0cs1fvgclq8hnvtq1wm0000gn/T/tmpqmwhbeyb']
+[2021-03-23 17:04:10,073] {standard_task_runner.py:77} INFO - Job 84: Subtask DownloadDataFromCloud
+[2021-03-23 17:04:10,100] {logging_mixin.py:104} INFO - Running <TaskInstance: EDGAR-Annotation-Pipeline.DownloadDataFromCloud 2021-03-24T00:03:45.888381+00:00 [running]> on host prathyushas-mbp.home
+[2021-03-23 17:04:10,121] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=EDGAR-Annotation-Pipeline
+AIRFLOW_CTX_TASK_ID=DownloadDataFromCloud
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-24T00:03:45.888381+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-24T00:03:45.888381+00:00
+[2021-03-23 17:04:10,158] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 17:04:23,967] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-23 17:04:23,971] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=EDGAR-Annotation-Pipeline, task_id=DownloadDataFromCloud, execution_date=20210324T000345, start_date=20210324T000410, end_date=20210324T000423
+[2021-03-23 17:04:23,988] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-23 17:04:23,994] {local_task_job.py:146} INFO - Task exited with return code 0

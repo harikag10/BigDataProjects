@@ -1,0 +1,16 @@
+dev:
+  bucket: "edgarfile-storage"
+
+  s3_download:
+
+    prefix: "Part2/"
+
+  annotation:
+
+    prefix: "annotation"
+
+    object_key: "annotation.csv"
+
+  aws_access_key_id: "AKIA4DTCQWNVOEHGVTH3"
+
+  aws_secret_access_key: "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"

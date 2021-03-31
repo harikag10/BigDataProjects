@@ -1,0 +1,16 @@
+dev:
+
+  saved_model_path: "EDGARModel_bert"
+
+  bucket: "edgarfile-storage"
+
+  s3_target: "Part2"
+
+  aws_secret_access_key: "a8zwc0JHZlgKdytwVckajCYopjLbl1T/XG6Iellq"
+
+  aws_access_key_id: "AKIA4DTCQWNVOEHGVTH3"
+
+  local_downloaddir: "edgar_download"
+
+  s3_sourcefilename: "annotation.csv"
+

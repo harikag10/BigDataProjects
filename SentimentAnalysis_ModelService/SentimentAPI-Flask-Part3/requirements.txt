@@ -1,0 +1,22 @@
+# production
+pyyaml
+numpy
+pandas
+scikit-learn
+flask
+gunicorn
+tensorflow
+boto3==1.16.8
+smart_open
+fsspec
+s3fs
+tensorflow-hub
+tensorflow-datasets
+tensorflow_text
+
+# dev
+coloredlogs
+black
+flake8
+
+# etc

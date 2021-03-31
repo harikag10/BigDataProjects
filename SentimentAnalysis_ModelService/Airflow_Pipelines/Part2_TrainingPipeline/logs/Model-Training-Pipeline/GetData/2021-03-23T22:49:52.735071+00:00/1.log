@@ -1,0 +1,37 @@
+[2021-03-23 18:50:06,800] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.GetData 2021-03-23T22:49:52.735071+00:00 [queued]>
+[2021-03-23 18:50:06,809] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.GetData 2021-03-23T22:49:52.735071+00:00 [queued]>
+[2021-03-23 18:50:06,809] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 18:50:06,809] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-23 18:50:06,809] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 18:50:06,817] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): GetData> on 2021-03-23T22:49:52.735071+00:00
+[2021-03-23 18:50:06,821] {standard_task_runner.py:52} INFO - Started process 12471 to run task
+[2021-03-23 18:50:06,833] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Model-Training-Pipeline', 'GetData', '2021-03-23T22:49:52.735071+00:00', '--job-id', '25', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/train.py', '--cfg-path', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmpntqr086r', '--error-file', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmpvy6dq5ol']
+[2021-03-23 18:50:06,836] {standard_task_runner.py:77} INFO - Job 25: Subtask GetData
+[2021-03-23 18:50:06,884] {logging_mixin.py:104} INFO - Running <TaskInstance: Model-Training-Pipeline.GetData 2021-03-23T22:49:52.735071+00:00 [running]> on host 152.1.168.192.in-addr.arpa
+[2021-03-23 18:50:06,925] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Model-Training-Pipeline
+AIRFLOW_CTX_TASK_ID=GetData
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-23T22:49:52.735071+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-23T22:49:52.735071+00:00
+[2021-03-23 18:50:07,338] {taskinstance.py:1455} ERROR - [Errno 17] File exists: 'EDGAR/train/Negative'
+Traceback (most recent call last):
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py", line 48, in getData
+    os.makedirs('EDGAR/train/Negative')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: 'EDGAR/train/Negative'
+[2021-03-23 18:50:07,349] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Model-Training-Pipeline, task_id=GetData, execution_date=20210323T224952, start_date=20210323T225006, end_date=20210323T225007
+[2021-03-23 18:50:07,409] {local_task_job.py:146} INFO - Task exited with return code 1

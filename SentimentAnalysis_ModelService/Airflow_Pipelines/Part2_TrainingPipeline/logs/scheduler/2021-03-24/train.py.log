@@ -1,0 +1,174 @@
+[2021-03-23 20:14:41,303] {scheduler_job.py:182} INFO - Started process (PID=14187) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:14:41,305] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:14:41,307] {logging_mixin.py:104} INFO - [2021-03-23 20:14:41,306] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:14:55,476] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:14:55,520] {logging_mixin.py:104} INFO - [2021-03-23 20:14:55,519] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:14:55,618] {logging_mixin.py:104} INFO - [2021-03-23 20:14:55,617] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:14:55,675] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 14.379 seconds
+[2021-03-23 20:25:26,922] {scheduler_job.py:182} INFO - Started process (PID=14316) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:25:26,925] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:25:26,928] {logging_mixin.py:104} INFO - [2021-03-23 20:25:26,927] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:25:42,843] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:25:42,869] {logging_mixin.py:104} INFO - [2021-03-23 20:25:42,863] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:25:42,899] {logging_mixin.py:104} INFO - [2021-03-23 20:25:42,898] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:25:42,920] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 16.004 seconds
+[2021-03-23 20:27:54,162] {scheduler_job.py:182} INFO - Started process (PID=14369) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:27:54,165] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:27:54,166] {logging_mixin.py:104} INFO - [2021-03-23 20:27:54,166] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:27:59,669] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:27:59,678] {logging_mixin.py:104} INFO - [2021-03-23 20:27:59,678] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:27:59,688] {logging_mixin.py:104} INFO - [2021-03-23 20:27:59,688] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:27:59,694] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 5.537 seconds
+[2021-03-23 20:28:31,029] {scheduler_job.py:182} INFO - Started process (PID=14406) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:28:31,031] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:28:31,032] {logging_mixin.py:104} INFO - [2021-03-23 20:28:31,032] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:28:38,132] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:28:38,142] {logging_mixin.py:104} INFO - [2021-03-23 20:28:38,141] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:28:38,156] {logging_mixin.py:104} INFO - [2021-03-23 20:28:38,156] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:28:38,163] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 7.139 seconds
+[2021-03-23 20:29:08,736] {scheduler_job.py:182} INFO - Started process (PID=14434) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:29:08,739] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:29:08,742] {logging_mixin.py:104} INFO - [2021-03-23 20:29:08,741] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:29:16,778] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:29:16,805] {logging_mixin.py:104} INFO - [2021-03-23 20:29:16,804] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:29:16,833] {logging_mixin.py:104} INFO - [2021-03-23 20:29:16,833] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:29:16,857] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 8.126 seconds
+[2021-03-23 20:29:47,243] {scheduler_job.py:182} INFO - Started process (PID=14468) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:29:47,246] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:29:47,255] {logging_mixin.py:104} INFO - [2021-03-23 20:29:47,254] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:29:56,468] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:29:56,480] {logging_mixin.py:104} INFO - [2021-03-23 20:29:56,480] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:29:56,500] {logging_mixin.py:104} INFO - [2021-03-23 20:29:56,500] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:29:56,510] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 9.273 seconds
+[2021-03-23 20:30:26,791] {scheduler_job.py:182} INFO - Started process (PID=14503) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:30:26,792] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:30:26,794] {logging_mixin.py:104} INFO - [2021-03-23 20:30:26,793] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:30:32,003] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:30:32,013] {logging_mixin.py:104} INFO - [2021-03-23 20:30:32,013] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:30:32,024] {logging_mixin.py:104} INFO - [2021-03-23 20:30:32,023] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:30:32,034] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 5.248 seconds
+[2021-03-23 20:31:02,602] {scheduler_job.py:182} INFO - Started process (PID=14532) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:31:02,604] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 20:31:02,606] {logging_mixin.py:104} INFO - [2021-03-23 20:31:02,606] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:31:08,322] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 20:31:08,334] {logging_mixin.py:104} INFO - [2021-03-23 20:31:08,334] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:31:08,345] {logging_mixin.py:104} INFO - [2021-03-23 20:31:08,345] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 20:31:08,351] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 5.754 seconds
+[2021-03-23 21:09:59,985] {scheduler_job.py:182} INFO - Started process (PID=14964) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:09:59,988] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:09:59,990] {logging_mixin.py:104} INFO - [2021-03-23 21:09:59,990] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:10:11,624] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:10:11,641] {logging_mixin.py:104} INFO - [2021-03-23 21:10:11,639] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:10:11,655] {logging_mixin.py:104} INFO - [2021-03-23 21:10:11,655] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:10:11,666] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 11.685 seconds
+[2021-03-23 21:13:10,975] {scheduler_job.py:182} INFO - Started process (PID=15031) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:13:10,980] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:13:10,983] {logging_mixin.py:104} INFO - [2021-03-23 21:13:10,982] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:13:21,037] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:13:21,047] {logging_mixin.py:104} INFO - [2021-03-23 21:13:21,046] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:13:21,059] {logging_mixin.py:104} INFO - [2021-03-23 21:13:21,058] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:13:21,068] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 10.100 seconds
+[2021-03-23 21:13:51,501] {scheduler_job.py:182} INFO - Started process (PID=15062) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:13:51,502] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:13:51,504] {logging_mixin.py:104} INFO - [2021-03-23 21:13:51,503] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:14:51,992] {scheduler_job.py:182} INFO - Started process (PID=15100) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:14:51,994] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:14:51,998] {logging_mixin.py:104} INFO - [2021-03-23 21:14:51,997] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:15:32,167] {scheduler_job.py:182} INFO - Started process (PID=15138) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:15:32,170] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:15:32,172] {logging_mixin.py:104} INFO - [2021-03-23 21:15:32,171] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:15:47,326] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:15:47,354] {logging_mixin.py:104} INFO - [2021-03-23 21:15:47,352] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:15:47,376] {logging_mixin.py:104} INFO - [2021-03-23 21:15:47,376] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:15:47,389] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 15.227 seconds
+[2021-03-23 21:17:46,989] {scheduler_job.py:182} INFO - Started process (PID=15183) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:17:46,994] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:17:46,997] {logging_mixin.py:104} INFO - [2021-03-23 21:17:46,996] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:17:53,850] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:17:53,864] {logging_mixin.py:104} INFO - [2021-03-23 21:17:53,864] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:17:53,875] {logging_mixin.py:104} INFO - [2021-03-23 21:17:53,874] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:17:53,881] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 6.905 seconds
+[2021-03-23 21:18:23,974] {scheduler_job.py:182} INFO - Started process (PID=15224) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:18:23,976] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:18:23,978] {logging_mixin.py:104} INFO - [2021-03-23 21:18:23,978] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:18:30,666] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:18:30,675] {logging_mixin.py:104} INFO - [2021-03-23 21:18:30,675] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:18:30,685] {logging_mixin.py:104} INFO - [2021-03-23 21:18:30,684] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:18:30,691] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 6.720 seconds
+[2021-03-23 21:19:01,149] {scheduler_job.py:182} INFO - Started process (PID=15256) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:19:01,152] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:19:01,154] {logging_mixin.py:104} INFO - [2021-03-23 21:19:01,153] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:19:09,988] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:19:10,067] {logging_mixin.py:104} INFO - [2021-03-23 21:19:10,055] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:19:10,181] {logging_mixin.py:104} INFO - [2021-03-23 21:19:10,180] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:19:10,196] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 9.062 seconds
+[2021-03-23 21:19:40,611] {scheduler_job.py:182} INFO - Started process (PID=15288) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:19:40,614] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-23 21:19:40,617] {logging_mixin.py:104} INFO - [2021-03-23 21:19:40,616] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:19:46,566] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-23 21:19:46,578] {logging_mixin.py:104} INFO - [2021-03-23 21:19:46,576] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:19:46,590] {logging_mixin.py:104} INFO - [2021-03-23 21:19:46,589] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-23 21:19:46,607] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 6.002 seconds
+[2021-03-24 00:02:52,822] {scheduler_job.py:182} INFO - Started process (PID=16945) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:02:52,825] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 00:02:52,827] {logging_mixin.py:104} INFO - [2021-03-24 00:02:52,826] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:03:01,462] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:03:01,475] {logging_mixin.py:104} INFO - [2021-03-24 00:03:01,474] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:03:01,490] {logging_mixin.py:104} INFO - [2021-03-24 00:03:01,489] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 00:03:01,497] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 8.681 seconds
+[2021-03-24 00:03:31,629] {scheduler_job.py:182} INFO - Started process (PID=16976) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:03:31,631] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 00:03:31,634] {logging_mixin.py:104} INFO - [2021-03-24 00:03:31,632] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:03:38,685] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:03:38,694] {logging_mixin.py:104} INFO - [2021-03-24 00:03:38,694] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:03:38,706] {logging_mixin.py:104} INFO - [2021-03-24 00:03:38,705] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 00:03:38,711] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 7.090 seconds
+[2021-03-24 00:04:08,880] {scheduler_job.py:182} INFO - Started process (PID=17005) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:04:08,881] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 00:04:08,883] {logging_mixin.py:104} INFO - [2021-03-24 00:04:08,882] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:04:15,421] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:04:15,432] {logging_mixin.py:104} INFO - [2021-03-24 00:04:15,431] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:04:15,445] {logging_mixin.py:104} INFO - [2021-03-24 00:04:15,444] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 00:04:15,452] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 6.576 seconds
+[2021-03-24 00:04:51,876] {scheduler_job.py:182} INFO - Started process (PID=17038) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:04:51,878] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 00:04:51,879] {logging_mixin.py:104} INFO - [2021-03-24 00:04:51,879] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:04:57,756] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:04:57,767] {logging_mixin.py:104} INFO - [2021-03-24 00:04:57,765] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:04:57,777] {logging_mixin.py:104} INFO - [2021-03-24 00:04:57,777] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 00:04:57,783] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 5.912 seconds
+[2021-03-24 00:06:07,748] {scheduler_job.py:182} INFO - Started process (PID=17102) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:06:07,750] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 00:06:07,752] {logging_mixin.py:104} INFO - [2021-03-24 00:06:07,751] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:06:14,820] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 00:06:14,830] {logging_mixin.py:104} INFO - [2021-03-24 00:06:14,829] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:06:14,841] {logging_mixin.py:104} INFO - [2021-03-24 00:06:14,840] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 00:06:14,851] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 7.107 seconds
+[2021-03-24 01:02:38,905] {scheduler_job.py:182} INFO - Started process (PID=17434) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:02:38,907] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 01:02:38,909] {logging_mixin.py:104} INFO - [2021-03-24 01:02:38,908] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:02:43,623] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:02:43,637] {logging_mixin.py:104} INFO - [2021-03-24 01:02:43,636] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:02:43,651] {logging_mixin.py:104} INFO - [2021-03-24 01:02:43,651] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 01:02:43,661] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 4.760 seconds
+[2021-03-24 01:03:13,938] {scheduler_job.py:182} INFO - Started process (PID=17474) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:03:13,940] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 01:03:13,943] {logging_mixin.py:104} INFO - [2021-03-24 01:03:13,942] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:03:21,009] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:03:21,024] {logging_mixin.py:104} INFO - [2021-03-24 01:03:21,022] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:03:21,037] {logging_mixin.py:104} INFO - [2021-03-24 01:03:21,036] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 01:03:21,051] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 7.119 seconds
+[2021-03-24 01:03:51,257] {scheduler_job.py:182} INFO - Started process (PID=17516) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:03:51,258] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 01:03:51,262] {logging_mixin.py:104} INFO - [2021-03-24 01:03:51,261] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:03:55,152] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:03:55,160] {logging_mixin.py:104} INFO - [2021-03-24 01:03:55,160] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:03:55,169] {logging_mixin.py:104} INFO - [2021-03-24 01:03:55,169] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 01:03:55,174] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 3.921 seconds
+[2021-03-24 01:04:25,255] {scheduler_job.py:182} INFO - Started process (PID=17608) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:04:25,257] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py for tasks to queue
+[2021-03-24 01:04:25,258] {logging_mixin.py:104} INFO - [2021-03-24 01:04:25,258] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:04:29,049] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Model-Training-Pipeline']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py
+[2021-03-24 01:04:29,058] {logging_mixin.py:104} INFO - [2021-03-24 01:04:29,057] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:04:29,066] {logging_mixin.py:104} INFO - [2021-03-24 01:04:29,066] {dag.py:2273} INFO - Setting next_dagrun for Model-Training-Pipeline to None
+[2021-03-24 01:04:29,072] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py took 3.820 seconds

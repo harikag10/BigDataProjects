@@ -1,0 +1,180 @@
+[2021-03-23 15:53:47,419] {scheduler_job.py:182} INFO - Started process (PID=40100) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:53:47,421] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 15:53:47,421] {logging_mixin.py:104} INFO - [2021-03-23 15:53:47,421] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:53:47,666] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:53:47,695] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.276 seconds
+[2021-03-23 15:55:16,219] {scheduler_job.py:182} INFO - Started process (PID=40191) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:55:16,221] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 15:55:16,222] {logging_mixin.py:104} INFO - [2021-03-23 15:55:16,222] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:55:16,362] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:55:16,396] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.178 seconds
+[2021-03-23 15:58:21,936] {scheduler_job.py:182} INFO - Started process (PID=40341) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:58:21,939] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 15:58:21,939] {logging_mixin.py:104} INFO - [2021-03-23 15:58:21,939] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:58:21,991] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:58:22,014] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.078 seconds
+[2021-03-23 15:59:23,716] {scheduler_job.py:182} INFO - Started process (PID=40420) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:59:23,717] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 15:59:23,717] {logging_mixin.py:104} INFO - [2021-03-23 15:59:23,717] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:59:23,766] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 15:59:23,789] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.073 seconds
+[2021-03-23 16:00:17,290] {scheduler_job.py:182} INFO - Started process (PID=40488) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:00:17,292] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:00:17,293] {logging_mixin.py:104} INFO - [2021-03-23 16:00:17,293] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:00:17,510] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:00:17,537] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.247 seconds
+[2021-03-23 16:01:11,450] {scheduler_job.py:182} INFO - Started process (PID=40548) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:01:11,450] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:01:11,451] {logging_mixin.py:104} INFO - [2021-03-23 16:01:11,451] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:01:11,500] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:01:11,524] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.075 seconds
+[2021-03-23 16:01:59,503] {scheduler_job.py:182} INFO - Started process (PID=40606) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:01:59,503] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:01:59,504] {logging_mixin.py:104} INFO - [2021-03-23 16:01:59,503] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:01:59,554] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:01:59,577] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.075 seconds
+[2021-03-23 16:02:43,011] {scheduler_job.py:182} INFO - Started process (PID=40657) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:02:43,011] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:02:43,011] {logging_mixin.py:104} INFO - [2021-03-23 16:02:43,011] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:02:43,061] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:02:43,084] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.074 seconds
+[2021-03-23 16:03:30,472] {scheduler_job.py:182} INFO - Started process (PID=40715) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:03:30,472] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:03:30,472] {logging_mixin.py:104} INFO - [2021-03-23 16:03:30,472] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:03:30,522] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:03:30,546] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.075 seconds
+[2021-03-23 16:04:16,318] {scheduler_job.py:182} INFO - Started process (PID=40766) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:04:16,320] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:04:16,320] {logging_mixin.py:104} INFO - [2021-03-23 16:04:16,320] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:04:16,387] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:04:16,428] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.111 seconds
+[2021-03-23 16:05:07,729] {scheduler_job.py:182} INFO - Started process (PID=40831) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:05:07,731] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:05:07,732] {logging_mixin.py:104} INFO - [2021-03-23 16:05:07,732] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:05:07,783] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:05:07,807] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.079 seconds
+[2021-03-23 16:05:58,360] {scheduler_job.py:182} INFO - Started process (PID=40889) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:05:58,362] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:05:58,362] {logging_mixin.py:104} INFO - [2021-03-23 16:05:58,362] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:05:58,429] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:05:58,456] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.096 seconds
+[2021-03-23 16:06:47,315] {scheduler_job.py:182} INFO - Started process (PID=40947) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:06:47,315] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:06:47,315] {logging_mixin.py:104} INFO - [2021-03-23 16:06:47,315] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:06:47,364] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:06:47,389] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.074 seconds
+[2021-03-23 16:07:29,879] {scheduler_job.py:182} INFO - Started process (PID=41001) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:07:29,879] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:07:29,880] {logging_mixin.py:104} INFO - [2021-03-23 16:07:29,880] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:07:29,939] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:07:29,964] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.086 seconds
+[2021-03-23 16:08:15,168] {scheduler_job.py:182} INFO - Started process (PID=41056) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:08:15,169] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:08:15,169] {logging_mixin.py:104} INFO - [2021-03-23 16:08:15,169] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:08:15,218] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:08:15,241] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.073 seconds
+[2021-03-23 16:08:58,487] {scheduler_job.py:182} INFO - Started process (PID=41106) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:08:58,487] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:08:58,487] {logging_mixin.py:104} INFO - [2021-03-23 16:08:58,487] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:08:58,537] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:08:58,560] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.075 seconds
+[2021-03-23 16:09:41,401] {scheduler_job.py:182} INFO - Started process (PID=41160) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:09:41,401] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:09:41,401] {logging_mixin.py:104} INFO - [2021-03-23 16:09:41,401] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:09:41,450] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:09:41,473] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.073 seconds
+[2021-03-23 16:10:24,912] {scheduler_job.py:182} INFO - Started process (PID=41214) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:10:24,913] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:10:24,913] {logging_mixin.py:104} INFO - [2021-03-23 16:10:24,913] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:10:24,960] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:10:24,983] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.071 seconds
+[2021-03-23 16:11:14,898] {scheduler_job.py:182} INFO - Started process (PID=41271) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:11:14,898] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:11:14,898] {logging_mixin.py:104} INFO - [2021-03-23 16:11:14,898] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:11:14,945] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:11:14,968] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.071 seconds
+[2021-03-23 16:12:07,184] {scheduler_job.py:182} INFO - Started process (PID=41328) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:12:07,184] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:12:07,185] {logging_mixin.py:104} INFO - [2021-03-23 16:12:07,185] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:12:07,231] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:12:07,254] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.071 seconds
+[2021-03-23 16:13:00,430] {scheduler_job.py:182} INFO - Started process (PID=41388) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:13:00,431] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:13:00,431] {logging_mixin.py:104} INFO - [2021-03-23 16:13:00,431] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:13:00,495] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:13:00,519] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.090 seconds
+[2021-03-23 16:14:56,824] {scheduler_job.py:182} INFO - Started process (PID=41486) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:14:56,825] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:14:56,825] {logging_mixin.py:104} INFO - [2021-03-23 16:14:56,825] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:14:56,994] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:14:57,020] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.197 seconds
+[2021-03-23 16:31:01,276] {scheduler_job.py:182} INFO - Started process (PID=41647) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:31:01,278] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:31:01,279] {logging_mixin.py:104} INFO - [2021-03-23 16:31:01,279] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:31:01,341] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:31:01,366] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.091 seconds
+[2021-03-23 16:31:58,903] {scheduler_job.py:182} INFO - Started process (PID=41733) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:31:58,905] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:31:58,906] {logging_mixin.py:104} INFO - [2021-03-23 16:31:58,906] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:31:58,967] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:31:58,991] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.089 seconds
+[2021-03-23 16:33:03,381] {scheduler_job.py:182} INFO - Started process (PID=41813) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:33:03,381] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:33:03,381] {logging_mixin.py:104} INFO - [2021-03-23 16:33:03,381] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:33:03,431] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:33:03,454] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.074 seconds
+[2021-03-23 16:34:06,124] {scheduler_job.py:182} INFO - Started process (PID=41892) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:34:06,124] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:34:06,125] {logging_mixin.py:104} INFO - [2021-03-23 16:34:06,124] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:34:06,173] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:34:06,197] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.074 seconds
+[2021-03-23 16:34:53,276] {scheduler_job.py:182} INFO - Started process (PID=41949) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:34:53,276] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:34:53,276] {logging_mixin.py:104} INFO - [2021-03-23 16:34:53,276] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:34:53,328] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:34:53,351] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.076 seconds
+[2021-03-23 16:35:38,340] {scheduler_job.py:182} INFO - Started process (PID=42008) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:35:38,340] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:35:38,340] {logging_mixin.py:104} INFO - [2021-03-23 16:35:38,340] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:35:38,390] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:35:38,426] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.087 seconds
+[2021-03-23 16:36:50,819] {scheduler_job.py:182} INFO - Started process (PID=42101) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:36:50,820] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:36:50,820] {logging_mixin.py:104} INFO - [2021-03-23 16:36:50,820] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:36:51,060] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:36:51,097] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.279 seconds
+[2021-03-23 16:37:41,748] {scheduler_job.py:182} INFO - Started process (PID=42164) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:37:41,748] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:37:41,749] {logging_mixin.py:104} INFO - [2021-03-23 16:37:41,749] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:37:41,802] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:37:41,825] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.077 seconds
+[2021-03-23 16:38:50,795] {scheduler_job.py:182} INFO - Started process (PID=42240) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:38:50,796] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:38:50,796] {logging_mixin.py:104} INFO - [2021-03-23 16:38:50,796] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:38:50,845] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:38:50,873] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.080 seconds
+[2021-03-23 16:39:40,388] {scheduler_job.py:182} INFO - Started process (PID=42298) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:39:40,388] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:39:40,388] {logging_mixin.py:104} INFO - [2021-03-23 16:39:40,388] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:39:40,435] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:39:40,458] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.071 seconds
+[2021-03-23 16:57:07,100] {scheduler_job.py:182} INFO - Started process (PID=42388) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:57:07,102] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:57:07,102] {logging_mixin.py:104} INFO - [2021-03-23 16:57:07,102] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:57:07,162] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:57:07,187] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.088 seconds
+[2021-03-23 16:58:05,742] {scheduler_job.py:182} INFO - Started process (PID=42467) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:58:05,744] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:58:05,744] {logging_mixin.py:104} INFO - [2021-03-23 16:58:05,744] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:58:05,798] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:58:05,827] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.086 seconds
+[2021-03-23 16:58:50,815] {scheduler_job.py:182} INFO - Started process (PID=42522) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:58:50,817] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:58:50,817] {logging_mixin.py:104} INFO - [2021-03-23 16:58:50,817] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:58:50,868] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:58:50,891] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.078 seconds
+[2021-03-23 16:59:37,578] {scheduler_job.py:182} INFO - Started process (PID=42580) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:59:37,579] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py for tasks to queue
+[2021-03-23 16:59:37,579] {logging_mixin.py:104} INFO - [2021-03-23 16:59:37,579] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:59:37,628] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py
+[2021-03-23 16:59:37,651] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/files_upload.py took 0.073 seconds

@@ -1,0 +1,6 @@
+apache-airflow
+sqlalchemy==1.3.23
+tensorflow
+tensorflow-text
+tf-models-official
+boto3

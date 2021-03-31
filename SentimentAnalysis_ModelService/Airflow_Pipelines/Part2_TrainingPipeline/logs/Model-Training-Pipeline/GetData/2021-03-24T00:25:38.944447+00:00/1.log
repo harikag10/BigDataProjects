@@ -1,0 +1,22 @@
+[2021-03-23 20:25:52,438] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.GetData 2021-03-24T00:25:38.944447+00:00 [queued]>
+[2021-03-23 20:25:52,452] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.GetData 2021-03-24T00:25:38.944447+00:00 [queued]>
+[2021-03-23 20:25:52,453] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 20:25:52,453] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-23 20:25:52,453] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 20:25:52,463] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): GetData> on 2021-03-24T00:25:38.944447+00:00
+[2021-03-23 20:25:52,467] {standard_task_runner.py:52} INFO - Started process 14326 to run task
+[2021-03-23 20:25:52,482] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Model-Training-Pipeline', 'GetData', '2021-03-24T00:25:38.944447+00:00', '--job-id', '43', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/train.py', '--cfg-path', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmpf3907cmv', '--error-file', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmpj0gw3xbi']
+[2021-03-23 20:25:52,489] {standard_task_runner.py:77} INFO - Job 43: Subtask GetData
+[2021-03-23 20:25:52,534] {logging_mixin.py:104} INFO - Running <TaskInstance: Model-Training-Pipeline.GetData 2021-03-24T00:25:38.944447+00:00 [running]> on host 152.1.168.192.in-addr.arpa
+[2021-03-23 20:25:52,567] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Model-Training-Pipeline
+AIRFLOW_CTX_TASK_ID=GetData
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-24T00:25:38.944447+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-24T00:25:38.944447+00:00
+[2021-03-23 20:25:53,060] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-23 20:25:53,068] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=Model-Training-Pipeline, task_id=GetData, execution_date=20210324T002538, start_date=20210324T002552, end_date=20210324T002553
+[2021-03-23 20:25:53,104] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-23 20:25:53,139] {local_task_job.py:146} INFO - Task exited with return code 0

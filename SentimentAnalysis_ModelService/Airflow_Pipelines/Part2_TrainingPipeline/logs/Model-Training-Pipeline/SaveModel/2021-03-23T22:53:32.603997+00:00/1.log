@@ -1,0 +1,43 @@
+[2021-03-23 18:55:32,392] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.SaveModel 2021-03-23T22:53:32.603997+00:00 [queued]>
+[2021-03-23 18:55:32,408] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.SaveModel 2021-03-23T22:53:32.603997+00:00 [queued]>
+[2021-03-23 18:55:32,408] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 18:55:32,408] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-23 18:55:32,409] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 18:55:32,431] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): SaveModel> on 2021-03-23T22:53:32.603997+00:00
+[2021-03-23 18:55:32,436] {standard_task_runner.py:52} INFO - Started process 12697 to run task
+[2021-03-23 18:55:32,450] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Model-Training-Pipeline', 'SaveModel', '2021-03-23T22:53:32.603997+00:00', '--job-id', '30', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/train.py', '--cfg-path', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmpl0al1rux', '--error-file', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmp879cxbm3']
+[2021-03-23 18:55:32,452] {standard_task_runner.py:77} INFO - Job 30: Subtask SaveModel
+[2021-03-23 18:55:32,511] {logging_mixin.py:104} INFO - Running <TaskInstance: Model-Training-Pipeline.SaveModel 2021-03-23T22:53:32.603997+00:00 [running]> on host 152.1.168.192.in-addr.arpa
+[2021-03-23 18:55:32,561] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Model-Training-Pipeline
+AIRFLOW_CTX_TASK_ID=SaveModel
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-23T22:53:32.603997+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-23T22:53:32.603997+00:00
+[2021-03-23 18:55:32,564] {taskinstance.py:1455} ERROR - SavedModel file does not exist at: ./EDGARModel_bert/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/dags/train.py", line 340, in save_model
+    reloaded_model = tf.saved_model.load(saved_model_path)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/tensorflow/python/saved_model/load.py", line 859, in load
+    return load_internal(export_dir, tags, options)["root"]
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/tensorflow/python/saved_model/load.py", line 871, in load_internal
+    loader_impl.parse_saved_model_with_debug_info(export_dir))
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/tensorflow/python/saved_model/loader_impl.py", line 56, in parse_saved_model_with_debug_info
+    saved_model = _parse_saved_model(export_dir)
+  File "/Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/tensorflow/python/saved_model/loader_impl.py", line 114, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ./EDGARModel_bert/{saved_model.pbtxt|saved_model.pb}
+[2021-03-23 18:55:32,570] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Model-Training-Pipeline, task_id=SaveModel, execution_date=20210323T225332, start_date=20210323T225532, end_date=20210323T225532
+[2021-03-23 18:55:32,603] {local_task_job.py:146} INFO - Task exited with return code 1

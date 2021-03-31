@@ -1,0 +1,35 @@
+[2021-03-22 20:35:28,719] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: EDGAR-Annotation-Pipeline.PushDataToCloud 2021-03-23T03:35:23.163303+00:00 [queued]>
+[2021-03-22 20:35:28,727] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: EDGAR-Annotation-Pipeline.PushDataToCloud 2021-03-23T03:35:23.163303+00:00 [queued]>
+[2021-03-22 20:35:28,727] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-22 20:35:28,727] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-22 20:35:28,727] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-22 20:35:28,745] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): PushDataToCloud> on 2021-03-23T03:35:23.163303+00:00
+[2021-03-22 20:35:28,747] {standard_task_runner.py:52} INFO - Started process 26280 to run task
+[2021-03-22 20:35:28,776] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'EDGAR-Annotation-Pipeline', 'PushDataToCloud', '2021-03-23T03:35:23.163303+00:00', '--job-id', '24', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/edgar_annotation.py', '--cfg-path', '/var/folders/_j/s8vbc0cs1fvgclq8hnvtq1wm0000gn/T/tmpso9eid53', '--error-file', '/var/folders/_j/s8vbc0cs1fvgclq8hnvtq1wm0000gn/T/tmpjostgcgv']
+[2021-03-22 20:35:28,779] {standard_task_runner.py:77} INFO - Job 24: Subtask PushDataToCloud
+[2021-03-22 20:35:28,823] {logging_mixin.py:104} INFO - Running <TaskInstance: EDGAR-Annotation-Pipeline.PushDataToCloud 2021-03-23T03:35:23.163303+00:00 [running]> on host prathyushas-mbp.home
+[2021-03-22 20:35:28,847] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=EDGAR-Annotation-Pipeline
+AIRFLOW_CTX_TASK_ID=PushDataToCloud
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-23T03:35:23.163303+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-23T03:35:23.163303+00:00
+[2021-03-22 20:35:28,848] {taskinstance.py:1455} ERROR - 'function' object has no attribute 'files_upload_edgar'
+Traceback (most recent call last):
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/edgar_annotation.py", line 21, in s3_upload
+    execute=files_upload.files_upload_edgar()
+AttributeError: 'function' object has no attribute 'files_upload_edgar'
+[2021-03-22 20:35:28,855] {taskinstance.py:1496} INFO - Marking task as FAILED. dag_id=EDGAR-Annotation-Pipeline, task_id=PushDataToCloud, execution_date=20210323T033523, start_date=20210323T033528, end_date=20210323T033528
+[2021-03-22 20:35:28,919] {local_task_job.py:146} INFO - Task exited with return code 1

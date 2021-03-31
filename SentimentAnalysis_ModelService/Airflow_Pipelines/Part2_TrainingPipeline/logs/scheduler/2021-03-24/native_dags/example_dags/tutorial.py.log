@@ -1,0 +1,175 @@
+[2021-03-23 20:14:31,317] {scheduler_job.py:182} INFO - Started process (PID=14176) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:14:31,321] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:14:31,324] {logging_mixin.py:104} INFO - [2021-03-23 20:14:31,323] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:14:31,346] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:14:31,387] {logging_mixin.py:104} INFO - [2021-03-23 20:14:31,386] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:14:31,417] {logging_mixin.py:104} INFO - [2021-03-23 20:14:31,415] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:14:31,446] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.135 seconds
+[2021-03-23 20:25:13,161] {scheduler_job.py:182} INFO - Started process (PID=14299) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:25:13,164] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:25:13,167] {logging_mixin.py:104} INFO - [2021-03-23 20:25:13,166] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:25:13,194] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:25:13,223] {logging_mixin.py:104} INFO - [2021-03-23 20:25:13,223] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:25:13,255] {logging_mixin.py:104} INFO - [2021-03-23 20:25:13,254] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:25:13,276] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.121 seconds
+[2021-03-23 20:27:29,726] {scheduler_job.py:182} INFO - Started process (PID=14353) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:27:29,730] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:27:29,732] {logging_mixin.py:104} INFO - [2021-03-23 20:27:29,732] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:27:29,746] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:27:29,769] {logging_mixin.py:104} INFO - [2021-03-23 20:27:29,768] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:27:29,791] {logging_mixin.py:104} INFO - [2021-03-23 20:27:29,791] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:27:29,802] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.082 seconds
+[2021-03-23 20:28:18,035] {scheduler_job.py:182} INFO - Started process (PID=14391) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:28:18,043] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:28:18,049] {logging_mixin.py:104} INFO - [2021-03-23 20:28:18,047] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:28:18,060] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:28:18,089] {logging_mixin.py:104} INFO - [2021-03-23 20:28:18,088] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:28:18,117] {logging_mixin.py:104} INFO - [2021-03-23 20:28:18,116] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:28:18,132] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.106 seconds
+[2021-03-23 20:28:55,001] {scheduler_job.py:182} INFO - Started process (PID=14423) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:28:55,006] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:28:55,014] {logging_mixin.py:104} INFO - [2021-03-23 20:28:55,012] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:28:55,025] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:28:55,057] {logging_mixin.py:104} INFO - [2021-03-23 20:28:55,056] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:28:55,081] {logging_mixin.py:104} INFO - [2021-03-23 20:28:55,080] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:28:55,101] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.104 seconds
+[2021-03-23 20:29:27,303] {scheduler_job.py:182} INFO - Started process (PID=14446) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:29:27,305] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:29:27,307] {logging_mixin.py:104} INFO - [2021-03-23 20:29:27,306] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:29:27,314] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:29:27,335] {logging_mixin.py:104} INFO - [2021-03-23 20:29:27,335] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:29:27,352] {logging_mixin.py:104} INFO - [2021-03-23 20:29:27,352] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:29:27,361] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2021-03-23 20:30:00,119] {scheduler_job.py:182} INFO - Started process (PID=14474) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:30:00,121] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:30:00,129] {logging_mixin.py:104} INFO - [2021-03-23 20:30:00,124] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:30:00,139] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:30:00,160] {logging_mixin.py:104} INFO - [2021-03-23 20:30:00,159] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:30:00,178] {logging_mixin.py:104} INFO - [2021-03-23 20:30:00,178] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:30:00,194] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.080 seconds
+[2021-03-23 20:30:35,633] {scheduler_job.py:182} INFO - Started process (PID=14506) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:30:35,636] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:30:35,637] {logging_mixin.py:104} INFO - [2021-03-23 20:30:35,637] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:30:35,643] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:30:35,659] {logging_mixin.py:104} INFO - [2021-03-23 20:30:35,658] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:30:35,679] {logging_mixin.py:104} INFO - [2021-03-23 20:30:35,678] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:30:35,690] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.061 seconds
+[2021-03-23 20:31:11,897] {scheduler_job.py:182} INFO - Started process (PID=14537) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:31:11,901] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 20:31:11,905] {logging_mixin.py:104} INFO - [2021-03-23 20:31:11,903] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:31:11,922] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 20:31:11,951] {logging_mixin.py:104} INFO - [2021-03-23 20:31:11,951] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 20:31:11,971] {logging_mixin.py:104} INFO - [2021-03-23 20:31:11,970] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 20:31:11,995] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.105 seconds
+[2021-03-23 21:09:52,407] {scheduler_job.py:182} INFO - Started process (PID=14957) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:09:52,411] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:09:52,414] {logging_mixin.py:104} INFO - [2021-03-23 21:09:52,413] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:09:52,441] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:09:52,477] {logging_mixin.py:104} INFO - [2021-03-23 21:09:52,476] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:09:52,503] {logging_mixin.py:104} INFO - [2021-03-23 21:09:52,502] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:09:52,527] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.127 seconds
+[2021-03-23 21:13:03,470] {scheduler_job.py:182} INFO - Started process (PID=15025) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:13:03,478] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:13:03,481] {logging_mixin.py:104} INFO - [2021-03-23 21:13:03,480] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:13:03,502] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:13:03,570] {logging_mixin.py:104} INFO - [2021-03-23 21:13:03,569] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:13:03,597] {logging_mixin.py:104} INFO - [2021-03-23 21:13:03,596] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:13:03,617] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.164 seconds
+[2021-03-23 21:13:38,952] {scheduler_job.py:182} INFO - Started process (PID=15051) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:13:38,953] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:13:38,955] {logging_mixin.py:104} INFO - [2021-03-23 21:13:38,955] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:13:38,962] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:13:38,988] {logging_mixin.py:104} INFO - [2021-03-23 21:13:38,987] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:13:39,006] {logging_mixin.py:104} INFO - [2021-03-23 21:13:39,005] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:13:39,018] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.070 seconds
+[2021-03-23 21:18:06,729] {scheduler_job.py:182} INFO - Started process (PID=15202) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:18:06,733] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:18:06,734] {logging_mixin.py:104} INFO - [2021-03-23 21:18:06,734] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:18:06,742] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:18:06,767] {logging_mixin.py:104} INFO - [2021-03-23 21:18:06,767] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:18:06,785] {logging_mixin.py:104} INFO - [2021-03-23 21:18:06,785] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:18:06,797] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.072 seconds
+[2021-03-23 21:18:45,896] {scheduler_job.py:182} INFO - Started process (PID=15241) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:18:45,901] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:18:45,904] {logging_mixin.py:104} INFO - [2021-03-23 21:18:45,902] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:18:45,927] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:18:45,963] {logging_mixin.py:104} INFO - [2021-03-23 21:18:45,963] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:18:46,005] {logging_mixin.py:104} INFO - [2021-03-23 21:18:46,004] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:18:46,018] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.130 seconds
+[2021-03-23 21:19:25,455] {scheduler_job.py:182} INFO - Started process (PID=15273) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:19:25,457] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:19:25,461] {logging_mixin.py:104} INFO - [2021-03-23 21:19:25,459] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:19:25,467] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:19:25,491] {logging_mixin.py:104} INFO - [2021-03-23 21:19:25,491] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:19:25,513] {logging_mixin.py:104} INFO - [2021-03-23 21:19:25,512] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:19:25,529] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.079 seconds
+[2021-03-23 21:20:00,819] {scheduler_job.py:182} INFO - Started process (PID=15300) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:20:00,821] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 21:20:00,823] {logging_mixin.py:104} INFO - [2021-03-23 21:20:00,822] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:20:00,832] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 21:20:00,850] {logging_mixin.py:104} INFO - [2021-03-23 21:20:00,849] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 21:20:00,871] {logging_mixin.py:104} INFO - [2021-03-23 21:20:00,870] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-23 21:20:00,883] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.070 seconds
+[2021-03-24 00:02:50,415] {scheduler_job.py:182} INFO - Started process (PID=16943) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:02:50,418] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 00:02:50,420] {logging_mixin.py:104} INFO - [2021-03-24 00:02:50,420] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:02:50,436] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:02:50,462] {logging_mixin.py:104} INFO - [2021-03-24 00:02:50,461] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:02:50,506] {logging_mixin.py:104} INFO - [2021-03-24 00:02:50,504] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 00:02:50,535] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.127 seconds
+[2021-03-24 00:03:27,347] {scheduler_job.py:182} INFO - Started process (PID=16974) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:03:27,349] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 00:03:27,351] {logging_mixin.py:104} INFO - [2021-03-24 00:03:27,350] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:03:27,366] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:03:27,383] {logging_mixin.py:104} INFO - [2021-03-24 00:03:27,383] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:03:27,398] {logging_mixin.py:104} INFO - [2021-03-24 00:03:27,397] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 00:03:27,407] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2021-03-24 00:04:07,128] {scheduler_job.py:182} INFO - Started process (PID=17004) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:04:07,130] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 00:04:07,132] {logging_mixin.py:104} INFO - [2021-03-24 00:04:07,132] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:04:07,147] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:04:07,166] {logging_mixin.py:104} INFO - [2021-03-24 00:04:07,165] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:04:07,183] {logging_mixin.py:104} INFO - [2021-03-24 00:04:07,182] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 00:04:07,193] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.069 seconds
+[2021-03-24 00:04:47,880] {scheduler_job.py:182} INFO - Started process (PID=17034) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:04:47,882] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 00:04:47,886] {logging_mixin.py:104} INFO - [2021-03-24 00:04:47,885] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:04:47,902] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:04:47,929] {logging_mixin.py:104} INFO - [2021-03-24 00:04:47,928] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:04:47,952] {logging_mixin.py:104} INFO - [2021-03-24 00:04:47,951] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 00:04:47,964] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.088 seconds
+[2021-03-24 00:05:22,914] {scheduler_job.py:182} INFO - Started process (PID=17065) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:05:22,915] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 00:05:22,917] {logging_mixin.py:104} INFO - [2021-03-24 00:05:22,916] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:05:22,931] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 00:05:22,945] {logging_mixin.py:104} INFO - [2021-03-24 00:05:22,945] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 00:05:22,958] {logging_mixin.py:104} INFO - [2021-03-24 00:05:22,957] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 00:05:22,966] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.057 seconds
+[2021-03-24 01:02:51,077] {scheduler_job.py:182} INFO - Started process (PID=17446) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:02:51,079] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 01:02:51,081] {logging_mixin.py:104} INFO - [2021-03-24 01:02:51,080] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:02:51,088] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:02:51,108] {logging_mixin.py:104} INFO - [2021-03-24 01:02:51,108] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:02:51,119] {logging_mixin.py:104} INFO - [2021-03-24 01:02:51,119] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 01:02:51,131] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.057 seconds
+[2021-03-24 01:03:23,377] {scheduler_job.py:182} INFO - Started process (PID=17486) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:03:23,378] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 01:03:23,380] {logging_mixin.py:104} INFO - [2021-03-24 01:03:23,379] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:03:23,393] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:03:23,414] {logging_mixin.py:104} INFO - [2021-03-24 01:03:23,413] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:03:23,432] {logging_mixin.py:104} INFO - [2021-03-24 01:03:23,432] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 01:03:23,443] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.071 seconds
+[2021-03-24 01:03:57,407] {scheduler_job.py:182} INFO - Started process (PID=17522) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:03:57,409] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 01:03:57,410] {logging_mixin.py:104} INFO - [2021-03-24 01:03:57,410] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:03:57,416] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:03:57,429] {logging_mixin.py:104} INFO - [2021-03-24 01:03:57,429] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:03:57,440] {logging_mixin.py:104} INFO - [2021-03-24 01:03:57,439] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 01:03:57,447] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.044 seconds
+[2021-03-24 01:04:31,305] {scheduler_job.py:182} INFO - Started process (PID=17628) to work on /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:04:31,306] {scheduler_job.py:629} INFO - Processing file /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-24 01:04:31,308] {logging_mixin.py:104} INFO - [2021-03-24 01:04:31,307] {dagbag.py:448} INFO - Filling up the DagBag from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:04:31,313] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py
+[2021-03-24 01:04:31,328] {logging_mixin.py:104} INFO - [2021-03-24 01:04:31,328] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-24 01:04:31,339] {logging_mixin.py:104} INFO - [2021-03-24 01:04:31,339] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-22 00:00:00+00:00
+[2021-03-24 01:04:31,347] {scheduler_job.py:190} INFO - Processing /Users/harika/Desktop/CSYE_7245/Assignment2/pipeline/MyEnv/lib/python3.7/site-packages/airflow/example_dags/tutorial.py took 0.045 seconds

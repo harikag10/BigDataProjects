@@ -1,0 +1,1595 @@
+[2021-03-23 20:06:16,269] {scheduler_job.py:182} INFO - Started process (PID=44639) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:06:16,269] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:06:16,270] {logging_mixin.py:104} INFO - [2021-03-23 20:06:16,270] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:06:17,052] {logging_mixin.py:104} INFO - [2021-03-23 20:06:17,052] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:06:17,875] {logging_mixin.py:104} INFO - /Part2/Model/EDGARModel_bert/assets/vocab.txt
+[2021-03-23 20:06:17,875] {logging_mixin.py:104} INFO - /Part2/Model/EDGARModel_bert/assets
+[2021-03-23 20:06:17,876] {logging_mixin.py:104} INFO - vocab.txt
+[2021-03-23 20:06:18,291] {logging_mixin.py:104} INFO - /Part2/Model/EDGARModel_bert/saved_model.pb
+[2021-03-23 20:06:18,291] {logging_mixin.py:104} INFO - /Part2/Model/EDGARModel_bert
+[2021-03-23 20:06:18,291] {logging_mixin.py:104} INFO - saved_model.pb
+[2021-03-23 20:06:25,746] {logging_mixin.py:104} INFO - /Part2/Model/EDGARModel_bert/variables/variables.data-00000-of-00001
+[2021-03-23 20:06:25,746] {logging_mixin.py:104} INFO - /Part2/Model/EDGARModel_bert/variables
+[2021-03-23 20:06:25,746] {logging_mixin.py:104} INFO - variables.data-00000-of-00001
+[2021-03-23 20:06:46,272] {logging_mixin.py:104} INFO - [2021-03-23 20:06:46,272] {timeout.py:36} ERROR - Process timed out, PID: 44639
+[2021-03-23 20:06:47,376] {logging_mixin.py:104} INFO - [2021-03-23 20:06:47,360] {dagbag.py:305} ERROR - Failed to import: /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+Traceback (most recent call last):
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 195, in <module>
+    download()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 60, in download
+    my_bucket.download_file(s3_object.key, os.path.join(localpath,filename) )
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 260, in result
+    self._done_event.wait(MAXINT)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py after 30.0s, PID: 44639
+[2021-03-23 20:06:47,376] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:06:47,418] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 31.149 seconds
+[2021-03-23 20:08:08,501] {scheduler_job.py:182} INFO - Started process (PID=44733) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:08:08,503] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:08:08,504] {logging_mixin.py:104} INFO - [2021-03-23 20:08:08,504] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:08:09,772] {logging_mixin.py:104} INFO - [2021-03-23 20:08:09,772] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:08:10,698] {logging_mixin.py:104} INFO - s3key /Part2/Model/EDGARModel_bert/assets/vocab.txt
+[2021-03-23 20:08:10,698] {logging_mixin.py:104} INFO - path /Part2/Model/EDGARModel_bert/assets
+[2021-03-23 20:08:10,698] {logging_mixin.py:104} INFO - filename vocab.txt
+[2021-03-23 20:08:11,131] {logging_mixin.py:104} INFO - s3key /Part2/Model/EDGARModel_bert/saved_model.pb
+[2021-03-23 20:08:11,131] {logging_mixin.py:104} INFO - path /Part2/Model/EDGARModel_bert
+[2021-03-23 20:08:11,131] {logging_mixin.py:104} INFO - filename saved_model.pb
+[2021-03-23 20:08:23,812] {logging_mixin.py:104} INFO - s3key /Part2/Model/EDGARModel_bert/variables/variables.data-00000-of-00001
+[2021-03-23 20:08:23,812] {logging_mixin.py:104} INFO - path /Part2/Model/EDGARModel_bert/variables
+[2021-03-23 20:08:23,812] {logging_mixin.py:104} INFO - filename variables.data-00000-of-00001
+[2021-03-23 20:08:38,509] {logging_mixin.py:104} INFO - [2021-03-23 20:08:38,509] {timeout.py:36} ERROR - Process timed out, PID: 44733
+[2021-03-23 20:08:42,121] {logging_mixin.py:104} INFO - [2021-03-23 20:08:42,062] {dagbag.py:305} ERROR - Failed to import: /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+Traceback (most recent call last):
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 195, in <module>
+    download()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 60, in download
+    my_bucket.download_file(s3_object.key, os.path.join(localpath,filename) )
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 260, in result
+    self._done_event.wait(MAXINT)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py after 30.0s, PID: 44733
+[2021-03-23 20:08:42,122] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:08:42,153] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 33.652 seconds
+[2021-03-23 20:10:07,750] {scheduler_job.py:182} INFO - Started process (PID=44846) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:10:07,752] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:10:07,753] {logging_mixin.py:104} INFO - [2021-03-23 20:10:07,753] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:10:08,407] {logging_mixin.py:104} INFO - [2021-03-23 20:10:08,407] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:10:09,391] {logging_mixin.py:104} INFO - s3key /Part2/Model/EDGARModel_bert/assets/vocab.txt
+[2021-03-23 20:10:09,392] {logging_mixin.py:104} INFO - path /Part2/Model/EDGARModel_bert/assets
+[2021-03-23 20:10:09,392] {logging_mixin.py:104} INFO - filename vocab.txt
+[2021-03-23 20:10:10,107] {logging_mixin.py:104} INFO - s3key /Part2/Model/EDGARModel_bert/saved_model.pb
+[2021-03-23 20:10:10,107] {logging_mixin.py:104} INFO - path /Part2/Model/EDGARModel_bert
+[2021-03-23 20:10:10,107] {logging_mixin.py:104} INFO - filename saved_model.pb
+[2021-03-23 20:10:28,256] {logging_mixin.py:104} INFO - s3key /Part2/Model/EDGARModel_bert/variables/variables.data-00000-of-00001
+[2021-03-23 20:10:28,256] {logging_mixin.py:104} INFO - path /Part2/Model/EDGARModel_bert/variables
+[2021-03-23 20:10:28,257] {logging_mixin.py:104} INFO - filename variables.data-00000-of-00001
+[2021-03-23 20:10:37,761] {logging_mixin.py:104} INFO - [2021-03-23 20:10:37,760] {timeout.py:36} ERROR - Process timed out, PID: 44846
+[2021-03-23 20:10:38,548] {logging_mixin.py:104} INFO - [2021-03-23 20:10:38,511] {dagbag.py:305} ERROR - Failed to import: /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+Traceback (most recent call last):
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 195, in <module>
+    download()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 60, in download
+    my_bucket.download_file(s3_object.key, os.path.join(localpath,filename) )
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 260, in result
+    self._done_event.wait(MAXINT)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py after 30.0s, PID: 44846
+[2021-03-23 20:10:38,549] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:10:38,587] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 30.837 seconds
+[2021-03-23 20:12:08,854] {scheduler_job.py:182} INFO - Started process (PID=44979) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:12:08,856] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:12:08,858] {logging_mixin.py:104} INFO - [2021-03-23 20:12:08,858] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:12:09,780] {logging_mixin.py:104} INFO - [2021-03-23 20:12:09,780] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:12:10,990] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:12:10,990] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:10,990] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:12:11,310] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:12:11,310] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:11,310] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:12:11,693] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:12:11,694] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:11,695] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:12:11,955] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:12:11,955] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:11,956] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:12:12,203] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:12:12,203] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:12,203] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:12:12,554] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:12:12,554] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:12,554] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:12:12,806] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:12:12,806] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:12,806] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:12:13,123] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:12:13,123] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:13,123] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:12:13,463] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:12:13,463] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:13,463] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:12:13,702] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:12:13,702] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:13,702] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:12:14,091] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:12:14,091] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:14,091] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:12:14,396] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:12:14,396] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:14,396] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:12:14,783] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:12:14,783] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:14,783] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:12:15,070] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:12:15,071] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:15,071] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:12:15,311] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:12:15,311] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:15,312] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:12:15,615] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:12:15,615] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:15,615] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:12:15,967] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:12:15,967] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:15,968] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:12:16,137] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:12:16,137] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:16,137] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:12:16,411] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:12:16,412] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:16,412] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:12:16,584] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:12:16,584] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:16,584] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:12:16,806] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:12:16,806] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:16,806] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:12:16,987] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:12:16,987] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:16,987] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:12:17,159] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:12:17,159] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:17,160] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:12:17,421] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:12:17,421] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:17,421] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:12:17,665] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:12:17,665] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:17,665] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:12:17,899] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:12:17,899] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:17,899] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:12:18,137] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:12:18,137] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:18,137] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:12:18,301] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:12:18,301] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:18,301] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:12:18,542] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:12:18,542] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:18,542] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:12:18,777] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:12:18,777] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:18,777] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:12:18,941] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:12:18,941] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:18,941] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:12:19,185] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:12:19,185] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:19,185] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:12:19,452] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:12:19,452] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:19,452] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:12:19,719] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:12:19,720] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:19,720] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:12:19,927] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:12:19,927] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:19,927] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:12:20,163] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:12:20,163] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:20,163] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:12:20,373] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:12:20,373] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:20,373] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:12:20,622] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:12:20,622] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:20,622] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:12:20,869] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:12:20,869] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:20,869] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:12:21,037] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:12:21,037] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:21,037] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:12:21,199] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:12:21,199] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:21,199] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:12:21,386] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:12:21,386] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:21,386] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:12:21,678] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:12:21,678] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:21,678] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:12:21,929] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:12:21,929] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:12:21,929] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:12:22,099] {logging_mixin.py:104} INFO - s3key saved_model.pb
+[2021-03-23 20:12:22,100] {logging_mixin.py:104} INFO - path
+[2021-03-23 20:12:22,100] {logging_mixin.py:104} INFO - filename saved_model.pb
+[2021-03-23 20:12:38,866] {logging_mixin.py:104} INFO - [2021-03-23 20:12:38,865] {timeout.py:36} ERROR - Process timed out, PID: 44979
+[2021-03-23 20:12:39,893] {logging_mixin.py:104} INFO - [2021-03-23 20:12:39,878] {dagbag.py:305} ERROR - Failed to import: /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+Traceback (most recent call last):
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 196, in <module>
+    download()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py", line 61, in download
+    my_bucket.download_file(s3_object.key, os.path.join(localpath,filename) )
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/s3transfer/futures.py", line 260, in result
+    self._done_event.wait(MAXINT)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/prathyusha/opt/anaconda3/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+  File "/Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/edgar_env/lib/python3.8/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py after 30.0s, PID: 44979
+[2021-03-23 20:12:39,894] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:12:39,926] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 31.073 seconds
+[2021-03-23 20:14:02,792] {scheduler_job.py:182} INFO - Started process (PID=45085) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:14:02,796] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:14:02,798] {logging_mixin.py:104} INFO - [2021-03-23 20:14:02,798] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:14:04,132] {logging_mixin.py:104} INFO - [2021-03-23 20:14:04,131] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:14:05,254] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:14:05,254] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:05,254] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:14:05,689] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:14:05,690] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:05,690] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:14:05,892] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:14:05,892] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:05,892] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:14:06,061] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:14:06,061] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:06,061] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:14:06,419] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:14:06,419] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:06,419] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:14:06,595] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:14:06,595] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:06,595] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:14:06,774] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:14:06,775] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:06,775] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:14:06,956] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:14:06,956] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:06,956] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:14:07,133] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:14:07,134] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:07,134] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:14:07,440] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:14:07,440] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:07,440] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:14:07,665] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:14:07,666] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:07,667] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:14:08,106] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:14:08,106] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:08,106] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:14:08,312] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:14:08,312] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:08,313] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:14:08,504] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:14:08,504] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:08,504] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:14:08,994] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:14:08,994] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:08,994] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:14:09,179] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:14:09,179] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:09,179] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:14:09,361] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:14:09,362] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:09,362] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:14:09,548] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:14:09,548] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:09,549] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:14:09,728] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:14:09,728] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:09,728] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:14:09,900] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:14:09,900] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:09,900] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:14:10,204] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:14:10,205] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:10,205] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:14:10,713] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:14:10,713] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:10,713] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:14:10,886] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:14:10,886] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:10,886] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:14:11,348] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:14:11,349] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:11,349] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:14:11,534] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:14:11,534] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:11,535] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:14:11,726] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:14:11,726] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:11,727] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:14:11,928] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:14:11,928] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:11,928] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:14:12,584] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:14:12,584] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:12,584] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:14:12,762] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:14:12,763] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:12,763] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:14:13,066] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:14:13,066] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:13,067] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:14:13,246] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:14:13,246] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:13,246] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:14:13,604] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:14:13,604] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:13,604] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:14:13,789] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:14:13,789] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:13,790] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:14:14,001] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:14:14,002] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:14,002] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:14:14,181] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:14:14,181] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:14,182] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:14:14,418] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:14:14,419] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:14,419] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:14:14,611] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:14:14,611] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:14,611] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:14:15,037] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:14:15,037] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:15,037] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:14:15,210] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:14:15,211] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:15,211] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:14:15,650] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:14:15,650] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:15,651] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:14:15,835] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:14:15,836] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:15,836] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:14:16,032] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:14:16,033] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:16,033] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:14:16,263] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:14:16,263] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:16,263] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:14:16,459] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:14:16,460] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:14:16,460] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:14:16,636] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:14:16,664] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 13.872 seconds
+[2021-03-23 20:16:06,921] {scheduler_job.py:182} INFO - Started process (PID=45188) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:16:06,924] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:16:06,924] {logging_mixin.py:104} INFO - [2021-03-23 20:16:06,924] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:16:07,962] {logging_mixin.py:104} INFO - [2021-03-23 20:16:07,961] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:16:09,060] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:16:09,061] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:09,061] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:16:09,469] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:16:09,469] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:09,469] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:16:09,931] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:16:09,931] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:09,931] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:16:10,184] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:16:10,184] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:10,184] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:16:10,573] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:16:10,573] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:10,573] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:16:10,850] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:16:10,851] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:10,851] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:16:11,029] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:16:11,029] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:11,029] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:16:11,466] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:16:11,466] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:11,466] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:16:11,678] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:16:11,678] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:11,678] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:16:12,079] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:16:12,079] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:12,079] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:16:12,266] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:16:12,266] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:12,266] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:16:12,431] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:16:12,431] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:12,431] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:16:12,852] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:16:12,852] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:12,852] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:16:13,308] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:16:13,308] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:13,308] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:16:13,473] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:16:13,473] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:13,473] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:16:13,923] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:16:13,923] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:13,923] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:16:14,105] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:16:14,105] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:14,105] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:16:14,272] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:16:14,272] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:14,272] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:16:14,621] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:16:14,621] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:14,621] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:16:14,786] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:16:14,786] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:14,786] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:16:15,236] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:16:15,236] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:15,236] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:16:16,075] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:16:16,075] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:16,075] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:16:16,259] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:16:16,259] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:16,260] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:16:16,432] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:16:16,432] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:16,432] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:16:16,599] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:16:16,599] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:16,599] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:16:16,810] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:16:16,810] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:16,810] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:16:17,306] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:16:17,307] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:17,307] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:16:17,609] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:16:17,609] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:17,609] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:16:17,802] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:16:17,802] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:17,802] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:16:18,225] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:16:18,225] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:18,225] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:16:18,393] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:16:18,393] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:18,393] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:16:18,839] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:16:18,840] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:18,840] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:16:19,009] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:16:19,009] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:19,009] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:16:19,181] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:16:19,181] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:19,181] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:16:19,538] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:16:19,538] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:19,538] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:16:19,706] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:16:19,706] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:19,706] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:16:20,069] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:16:20,069] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:20,069] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:16:20,259] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:16:20,259] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:20,259] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:16:20,429] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:16:20,429] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:20,429] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:16:20,682] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:16:20,682] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:20,682] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:16:20,856] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:16:20,856] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:20,856] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:16:21,179] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:16:21,179] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:21,179] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:16:21,388] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:16:21,389] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:21,389] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:16:21,589] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:16:21,589] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:21,589] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:16:21,761] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:16:21,786] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 14.865 seconds
+[2021-03-23 20:16:52,886] {scheduler_job.py:182} INFO - Started process (PID=45252) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:16:52,887] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:16:52,887] {logging_mixin.py:104} INFO - [2021-03-23 20:16:52,887] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:16:53,280] {logging_mixin.py:104} INFO - [2021-03-23 20:16:53,280] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:16:54,683] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:16:54,683] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:54,683] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:16:54,920] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:16:54,921] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:54,921] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:16:55,173] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:16:55,174] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:55,174] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:16:55,345] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:16:55,346] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:55,346] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:16:55,791] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:16:55,792] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:55,792] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:16:55,978] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:16:55,978] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:55,978] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:16:56,147] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:16:56,147] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:56,147] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:16:56,419] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:16:56,419] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:56,420] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:16:56,589] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:16:56,589] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:56,589] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:16:56,769] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:16:56,769] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:56,769] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:16:57,019] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:16:57,019] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:57,019] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:16:57,338] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:16:57,338] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:57,338] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:16:57,578] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:16:57,578] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:57,578] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:16:57,937] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:16:57,937] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:57,938] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:16:58,108] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:16:58,109] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:58,109] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:16:58,559] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:16:58,559] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:58,559] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:16:58,730] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:16:58,730] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:58,730] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:16:59,171] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:16:59,171] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:59,171] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:16:59,345] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:16:59,346] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:59,346] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:16:59,700] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:16:59,700] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:59,700] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:16:59,868] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:16:59,868] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:16:59,868] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:17:00,030] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:17:00,030] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:00,030] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:17:00,396] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:17:00,397] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:00,397] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:17:00,563] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:17:00,563] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:00,563] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:17:01,012] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:17:01,012] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:01,012] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:17:01,544] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:17:01,544] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:01,544] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:17:01,757] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:17:01,758] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:01,758] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:17:01,925] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:17:01,925] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:01,925] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:17:02,157] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:17:02,157] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:02,157] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:17:02,328] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:17:02,328] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:02,328] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:17:02,496] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:17:02,496] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:02,496] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:17:02,685] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:17:02,685] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:02,685] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:17:02,854] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:17:02,854] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:02,854] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:17:03,165] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:17:03,165] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:03,165] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:17:03,492] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:17:03,492] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:03,492] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:17:03,660] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:17:03,660] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:03,660] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:17:04,000] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:17:04,000] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:04,000] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:17:04,165] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:17:04,165] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:04,165] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:17:04,395] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:17:04,395] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:04,395] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:17:04,565] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:17:04,565] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:04,565] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:17:05,008] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:17:05,008] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:05,008] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:17:05,211] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:17:05,211] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:05,211] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:17:05,395] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:17:05,395] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:05,395] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:17:05,842] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:17:05,842] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:17:05,842] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:17:06,020] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:17:06,045] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 13.159 seconds
+[2021-03-23 20:18:27,813] {scheduler_job.py:182} INFO - Started process (PID=45348) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:18:27,813] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:18:27,814] {logging_mixin.py:104} INFO - [2021-03-23 20:18:27,814] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:18:28,210] {logging_mixin.py:104} INFO - [2021-03-23 20:18:28,209] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:18:29,484] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:18:29,485] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:29,485] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:18:29,727] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:18:29,728] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:29,728] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:18:30,124] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:18:30,124] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:30,124] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:18:30,310] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:18:30,310] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:30,310] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:18:30,736] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:18:30,736] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:30,736] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:18:30,979] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:18:30,979] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:30,979] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:18:31,250] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:18:31,250] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:31,250] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:18:31,434] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:18:31,434] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:31,434] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:18:31,748] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:18:31,748] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:31,748] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:18:31,916] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:18:31,916] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:31,917] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:18:32,169] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:18:32,169] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:32,169] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:18:32,337] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:18:32,337] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:32,337] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:18:32,784] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:18:32,784] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:32,785] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:18:32,963] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:18:32,963] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:32,964] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:18:33,153] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:18:33,153] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:33,153] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:18:33,706] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:18:33,706] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:33,706] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:18:33,873] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:18:33,873] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:33,873] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:18:34,319] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:18:34,319] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:34,319] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:18:34,500] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:18:34,500] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:34,500] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:18:34,933] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:18:34,933] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:34,934] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:18:35,100] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:18:35,100] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:35,100] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:18:35,853] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:18:35,853] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:35,853] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:18:36,028] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:18:36,028] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:36,028] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:18:36,234] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:18:36,234] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:36,234] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:18:36,404] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:18:36,404] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:36,404] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:18:36,820] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:18:36,820] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:36,821] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:18:37,084] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:18:37,084] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:37,084] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:18:37,266] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:18:37,266] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:37,266] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:18:37,702] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:18:37,702] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:37,703] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:18:37,887] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:18:37,887] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:37,887] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:18:38,070] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:18:38,070] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:38,071] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:18:38,426] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:18:38,426] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:38,427] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:18:38,653] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:18:38,654] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:38,654] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:18:38,824] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:18:38,824] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:38,824] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:18:39,017] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:18:39,017] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:39,017] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:18:39,251] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:18:39,251] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:39,251] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:18:39,449] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:18:39,449] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:39,449] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:18:39,691] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:18:39,691] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:39,691] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:18:39,863] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:18:39,863] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:39,863] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:18:40,110] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:18:40,110] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:40,110] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:18:40,463] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:18:40,463] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:40,464] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:18:40,668] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:18:40,668] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:40,669] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:18:40,888] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:18:40,888] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:40,888] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:18:41,078] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:18:41,078] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:18:41,078] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:18:41,257] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:18:41,280] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 13.468 seconds
+[2021-03-23 20:19:47,705] {scheduler_job.py:182} INFO - Started process (PID=45432) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:19:47,706] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:19:47,706] {logging_mixin.py:104} INFO - [2021-03-23 20:19:47,706] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:19:48,219] {logging_mixin.py:104} INFO - [2021-03-23 20:19:48,219] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:19:49,238] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:19:49,238] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:49,238] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:19:49,555] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:19:49,555] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:49,555] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:19:49,719] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:19:49,719] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:49,719] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:19:50,007] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:19:50,007] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:50,007] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:19:50,175] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:19:50,175] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:50,175] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:19:50,405] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:19:50,405] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:50,405] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:19:50,588] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:19:50,588] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:50,588] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:19:50,933] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:19:50,933] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:50,933] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:19:51,125] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:19:51,125] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:51,125] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:19:51,292] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:19:51,292] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:51,293] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:19:51,469] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:19:51,469] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:51,469] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:19:51,684] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:19:51,684] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:51,684] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:19:51,856] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:19:51,856] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:51,856] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:19:52,249] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:19:52,249] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:52,249] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:19:52,430] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:19:52,430] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:52,430] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:19:52,658] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:19:52,659] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:52,659] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:19:52,827] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:19:52,827] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:52,827] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:19:53,067] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:19:53,067] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:53,067] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:19:53,231] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:19:53,231] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:53,231] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:19:53,396] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:19:53,396] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:53,396] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:19:53,664] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:19:53,664] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:53,664] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:19:53,842] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:19:53,842] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:53,842] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:19:54,278] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:19:54,278] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:54,278] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:19:54,604] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:19:54,604] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:54,604] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:19:54,861] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:19:54,861] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:54,861] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:19:55,185] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:19:55,185] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:55,185] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:19:55,493] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:19:55,493] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:55,494] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:19:55,669] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:19:55,669] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:55,669] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:19:55,988] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:19:55,988] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:55,988] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:19:56,243] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:19:56,244] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:56,244] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:19:56,549] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:19:56,550] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:56,550] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:19:56,807] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:19:56,807] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:56,807] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:19:57,133] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:19:57,133] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:57,133] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:19:57,577] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:19:57,577] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:57,577] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:19:57,766] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:19:57,766] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:57,766] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:19:58,064] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:19:58,064] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:58,064] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:19:58,245] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:19:58,245] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:58,245] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:19:58,546] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:19:58,546] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:58,546] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:19:58,973] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:19:58,973] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:58,973] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:19:59,160] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:19:59,160] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:59,160] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:19:59,520] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:19:59,521] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:59,521] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:19:59,684] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:19:59,684] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:59,684] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:19:59,997] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:19:59,998] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:19:59,998] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:20:00,237] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:20:00,237] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:20:00,237] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:20:00,496] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:20:00,521] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 12.816 seconds
+[2021-03-23 20:21:07,312] {scheduler_job.py:182} INFO - Started process (PID=45511) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:21:07,312] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:21:07,313] {logging_mixin.py:104} INFO - [2021-03-23 20:21:07,313] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:21:07,702] {logging_mixin.py:104} INFO - [2021-03-23 20:21:07,702] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:21:08,803] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:21:08,803] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:08,804] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:21:09,043] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:21:09,043] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:09,043] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:21:09,260] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:21:09,260] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:09,260] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:21:09,441] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:21:09,441] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:09,441] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:21:09,607] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:21:09,608] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:09,608] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:21:09,856] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:21:09,856] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:09,856] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:21:10,022] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:21:10,022] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:10,022] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:21:10,321] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:21:10,321] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:10,321] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:21:10,492] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:21:10,492] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:10,492] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:21:10,958] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:21:10,958] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:10,958] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:21:11,125] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:21:11,125] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:11,125] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:21:11,610] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:21:11,610] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:11,610] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:21:11,783] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:21:11,783] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:11,783] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:21:12,216] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:21:12,216] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:12,216] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:21:12,396] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:21:12,396] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:12,396] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:21:12,564] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:21:12,564] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:12,564] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:21:12,924] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:21:12,924] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:12,924] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:21:13,091] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:21:13,091] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:13,091] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:21:13,454] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:21:13,454] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:13,454] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:21:13,622] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:21:13,622] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:13,622] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:21:13,796] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:21:13,796] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:13,796] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:21:14,891] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:21:14,891] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:14,891] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:21:15,216] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:21:15,216] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:15,216] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:21:15,391] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:21:15,391] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:15,391] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:21:15,565] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:21:15,565] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:15,565] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:21:16,003] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:21:16,004] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:16,004] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:21:16,177] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:21:16,177] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:16,177] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:21:16,527] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:21:16,527] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:16,527] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:21:16,712] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:21:16,712] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:16,712] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:21:16,896] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:21:16,896] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:16,896] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:21:17,237] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:21:17,237] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:17,237] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:21:17,412] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:21:17,412] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:17,412] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:21:17,970] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:21:17,970] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:17,970] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:21:18,141] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:21:18,141] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:18,141] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:21:18,373] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:21:18,373] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:18,373] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:21:18,541] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:21:18,541] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:18,541] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:21:18,715] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:21:18,715] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:18,716] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:21:19,075] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:21:19,075] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:19,075] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:21:19,597] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:21:19,597] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:19,597] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:21:19,767] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:21:19,767] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:19,768] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:21:19,991] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:21:19,991] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:19,991] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:21:20,157] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:21:20,157] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:20,157] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:21:20,613] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:21:20,613] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:20,613] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:21:20,784] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:21:20,784] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:21:20,784] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:21:21,220] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:21:21,248] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 13.936 seconds
+[2021-03-23 20:22:18,251] {scheduler_job.py:182} INFO - Started process (PID=45588) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:22:18,252] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:22:18,252] {logging_mixin.py:104} INFO - [2021-03-23 20:22:18,252] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:22:18,718] {logging_mixin.py:104} INFO - [2021-03-23 20:22:18,718] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:22:19,748] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:22:19,748] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:19,748] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:22:20,118] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:22:20,118] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:20,119] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:22:20,292] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:22:20,292] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:20,292] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:22:20,758] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:22:20,758] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:20,758] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:22:21,039] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:22:21,039] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:21,039] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:22:21,218] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:22:21,218] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:21,218] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:22:21,653] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:22:21,653] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:21,653] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:22:21,850] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:22:21,850] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:21,850] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:22:22,276] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:22:22,276] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:22,276] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:22:22,459] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:22:22,459] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:22,459] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:22:22,883] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:22:22,883] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:22,883] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:22:23,086] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:22:23,086] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:23,086] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:22:23,269] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:22:23,269] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:23,269] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:22:23,497] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:22:23,497] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:23,497] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:22:23,682] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:22:23,682] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:23,682] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:22:24,112] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:22:24,112] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:24,112] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:22:24,351] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:22:24,351] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:24,351] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:22:24,728] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:22:24,728] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:24,728] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:22:24,917] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:22:24,917] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:24,917] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:22:25,102] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:22:25,102] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:25,102] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:22:25,344] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:22:25,344] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:25,344] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:22:25,537] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:22:25,537] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:25,537] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:22:25,957] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:22:25,957] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:25,957] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:22:26,159] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:22:26,159] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:26,159] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:22:26,346] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:22:26,346] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:26,346] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:22:26,521] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:22:26,521] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:26,522] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:22:26,880] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:22:26,880] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:26,880] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:22:27,080] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:22:27,080] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:27,080] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:22:27,252] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:22:27,253] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:27,253] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:22:27,518] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:22:27,518] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:27,518] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:22:27,691] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:22:27,691] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:27,691] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:22:27,869] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:22:27,869] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:27,869] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:22:28,054] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:22:28,054] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:28,055] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:22:28,478] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:22:28,479] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:28,479] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:22:28,696] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:22:28,696] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:28,696] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:22:29,313] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:22:29,313] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:29,313] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:22:29,489] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:22:29,489] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:29,489] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:22:30,022] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:22:30,022] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:30,022] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:22:30,199] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:22:30,200] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:30,200] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:22:30,565] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:22:30,565] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:30,565] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:22:30,735] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:22:30,735] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:30,735] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:22:30,918] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:22:30,918] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:30,918] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:22:31,267] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:22:31,267] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:31,267] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:22:31,498] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:22:31,498] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:22:31,498] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:22:31,796] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:22:31,820] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 13.569 seconds
+[2021-03-23 20:23:22,836] {scheduler_job.py:182} INFO - Started process (PID=45663) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:23:22,836] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:23:22,837] {logging_mixin.py:104} INFO - [2021-03-23 20:23:22,837] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:23:23,913] {logging_mixin.py:104} INFO - [2021-03-23 20:23:23,913] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:23:25,325] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:23:25,325] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:25,326] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:23:25,572] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:23:25,572] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:25,572] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:23:25,742] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:23:25,743] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:25,743] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:23:25,919] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:23:25,920] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:25,920] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:23:26,086] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:23:26,087] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:26,087] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:23:26,274] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:23:26,275] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:26,275] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:23:26,444] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:23:26,445] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:26,445] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:23:26,618] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:23:26,618] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:26,618] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:23:26,787] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:23:26,787] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:26,787] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:23:26,971] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:23:26,971] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:26,971] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:23:27,209] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:23:27,209] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:27,209] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:23:27,412] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:23:27,412] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:27,412] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:23:27,704] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:23:27,704] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:27,704] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:23:27,871] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:23:27,871] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:27,871] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:23:28,077] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:23:28,077] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:28,077] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:23:28,246] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:23:28,246] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:28,246] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:23:28,428] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:23:28,428] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:28,429] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:23:28,610] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:23:28,610] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:28,610] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:23:28,783] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:23:28,784] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:28,784] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:23:28,954] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:23:28,954] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:28,954] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:23:29,122] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:23:29,122] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:29,122] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:23:29,319] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:23:29,319] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:29,320] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:23:29,487] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:23:29,487] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:29,487] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:23:29,683] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:23:29,683] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:29,683] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:23:29,885] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:23:29,886] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:29,886] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:23:30,056] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:23:30,056] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:30,056] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:23:30,295] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:23:30,295] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:30,295] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:23:30,473] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:23:30,474] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:30,474] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:23:30,848] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:23:30,848] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:30,848] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:23:31,022] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:23:31,023] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:31,023] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:23:31,468] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:23:31,468] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:31,469] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:23:31,745] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:23:31,745] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:31,745] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:23:31,923] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:23:31,924] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:31,924] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:23:32,092] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:23:32,092] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:32,092] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:23:32,340] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:23:32,340] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:32,340] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:23:32,624] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:23:32,624] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:32,624] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:23:32,928] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:23:32,928] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:32,928] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:23:33,108] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:23:33,108] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:33,108] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:23:33,617] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:23:33,617] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:33,617] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:23:34,161] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:23:34,161] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:34,161] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:23:35,061] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:23:35,061] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:35,061] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:23:35,284] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:23:35,285] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:35,285] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:23:35,452] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:23:35,452] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:35,452] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:23:35,620] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:23:35,620] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:23:35,620] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:23:35,791] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:23:35,816] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 12.981 seconds
+[2021-03-23 20:24:07,307] {scheduler_job.py:182} INFO - Started process (PID=45732) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:24:07,308] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:24:07,308] {logging_mixin.py:104} INFO - [2021-03-23 20:24:07,308] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:24:08,866] {logging_mixin.py:104} INFO - [2021-03-23 20:24:08,866] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:24:09,793] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:24:09,793] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:09,793] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:24:10,271] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:24:10,277] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:10,277] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:24:10,719] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:24:10,719] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:10,719] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:24:10,927] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:24:10,927] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:10,927] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:24:11,108] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:24:11,108] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:11,108] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:24:11,274] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:24:11,274] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:11,274] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:24:11,441] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:24:11,441] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:11,441] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:24:11,610] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:24:11,610] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:11,611] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:24:11,797] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:24:11,798] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:11,798] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:24:11,974] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:24:11,974] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:11,974] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:24:12,211] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:24:12,211] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:12,211] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:24:12,384] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:24:12,385] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:12,385] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:24:12,667] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:24:12,667] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:12,667] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:24:12,836] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:24:12,836] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:12,836] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:24:13,038] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:24:13,038] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:13,038] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:24:13,246] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:24:13,247] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:13,247] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:24:13,417] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:24:13,417] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:24:13,417] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:24:58,194] {scheduler_job.py:182} INFO - Started process (PID=45794) to work on /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:24:58,197] {scheduler_job.py:629} INFO - Processing file /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py for tasks to queue
+[2021-03-23 20:24:58,197] {logging_mixin.py:104} INFO - [2021-03-23 20:24:58,197] {dagbag.py:448} INFO - Filling up the DagBag from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:25:00,006] {logging_mixin.py:104} INFO - [2021-03-23 20:25:00,005] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-23 20:25:01,414] {logging_mixin.py:104} INFO - s3key files/AGEN
+[2021-03-23 20:25:01,414] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:01,414] {logging_mixin.py:104} INFO - filename AGEN
+[2021-03-23 20:25:01,939] {logging_mixin.py:104} INFO - s3key files/ALTG
+[2021-03-23 20:25:01,939] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:01,939] {logging_mixin.py:104} INFO - filename ALTG
+[2021-03-23 20:25:02,940] {logging_mixin.py:104} INFO - s3key files/AXU
+[2021-03-23 20:25:02,940] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:02,940] {logging_mixin.py:104} INFO - filename AXU
+[2021-03-23 20:25:03,291] {logging_mixin.py:104} INFO - s3key files/CALA
+[2021-03-23 20:25:03,296] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:03,297] {logging_mixin.py:104} INFO - filename CALA
+[2021-03-23 20:25:03,656] {logging_mixin.py:104} INFO - s3key files/CKHUY
+[2021-03-23 20:25:03,656] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:03,656] {logging_mixin.py:104} INFO - filename CKHUY
+[2021-03-23 20:25:04,172] {logging_mixin.py:104} INFO - s3key files/CNNEF
+[2021-03-23 20:25:04,173] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:04,173] {logging_mixin.py:104} INFO - filename CNNEF
+[2021-03-23 20:25:04,453] {logging_mixin.py:104} INFO - s3key files/DAL
+[2021-03-23 20:25:04,453] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:04,453] {logging_mixin.py:104} INFO - filename DAL
+[2021-03-23 20:25:04,926] {logging_mixin.py:104} INFO - s3key files/DB
+[2021-03-23 20:25:04,939] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:04,939] {logging_mixin.py:104} INFO - filename DB
+[2021-03-23 20:25:05,344] {logging_mixin.py:104} INFO - s3key files/DD
+[2021-03-23 20:25:05,344] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:05,345] {logging_mixin.py:104} INFO - filename DD
+[2021-03-23 20:25:06,057] {logging_mixin.py:104} INFO - s3key files/DG
+[2021-03-23 20:25:06,058] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:06,058] {logging_mixin.py:104} INFO - filename DG
+[2021-03-23 20:25:06,533] {logging_mixin.py:104} INFO - s3key files/DM
+[2021-03-23 20:25:06,533] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:06,533] {logging_mixin.py:104} INFO - filename DM
+[2021-03-23 20:25:06,873] {logging_mixin.py:104} INFO - s3key files/ENLAY
+[2021-03-23 20:25:06,873] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:06,873] {logging_mixin.py:104} INFO - filename ENLAY
+[2021-03-23 20:25:07,246] {logging_mixin.py:104} INFO - s3key files/FCELB
+[2021-03-23 20:25:07,246] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:07,246] {logging_mixin.py:104} INFO - filename FCELB
+[2021-03-23 20:25:07,619] {logging_mixin.py:104} INFO - s3key files/FDX
+[2021-03-23 20:25:07,619] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:07,619] {logging_mixin.py:104} INFO - filename FDX
+[2021-03-23 20:25:07,986] {logging_mixin.py:104} INFO - s3key files/FIVE
+[2021-03-23 20:25:07,986] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:07,986] {logging_mixin.py:104} INFO - filename FIVE
+[2021-03-23 20:25:08,310] {logging_mixin.py:104} INFO - s3key files/GOL
+[2021-03-23 20:25:08,310] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:08,311] {logging_mixin.py:104} INFO - filename GOL
+[2021-03-23 20:25:08,697] {logging_mixin.py:104} INFO - s3key files/HRTH
+[2021-03-23 20:25:08,697] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:08,697] {logging_mixin.py:104} INFO - filename HRTH
+[2021-03-23 20:25:09,120] {logging_mixin.py:104} INFO - s3key files/JBL
+[2021-03-23 20:25:09,120] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:09,120] {logging_mixin.py:104} INFO - filename JBL
+[2021-03-23 20:25:09,463] {logging_mixin.py:104} INFO - s3key files/JILL
+[2021-03-23 20:25:09,463] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:09,463] {logging_mixin.py:104} INFO - filename JILL
+[2021-03-23 20:25:09,647] {logging_mixin.py:104} INFO - s3key files/JP
+[2021-03-23 20:25:09,648] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:09,648] {logging_mixin.py:104} INFO - filename JP
+[2021-03-23 20:25:10,045] {logging_mixin.py:104} INFO - s3key files/KIN
+[2021-03-23 20:25:10,045] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:10,046] {logging_mixin.py:104} INFO - filename KIN
+[2021-03-23 20:25:10,223] {logging_mixin.py:104} INFO - s3key files/KODK
+[2021-03-23 20:25:10,223] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:10,223] {logging_mixin.py:104} INFO - filename KODK
+[2021-03-23 20:25:10,588] {logging_mixin.py:104} INFO - s3key files/MOR
+[2021-03-23 20:25:10,588] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:10,589] {logging_mixin.py:104} INFO - filename MOR
+[2021-03-23 20:25:10,840] {logging_mixin.py:104} INFO - s3key files/MOTS
+[2021-03-23 20:25:10,840] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:10,840] {logging_mixin.py:104} INFO - filename MOTS
+[2021-03-23 20:25:11,083] {logging_mixin.py:104} INFO - s3key files/NKE
+[2021-03-23 20:25:11,083] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:11,083] {logging_mixin.py:104} INFO - filename NKE
+[2021-03-23 20:25:11,394] {logging_mixin.py:104} INFO - s3key files/OLLI
+[2021-03-23 20:25:11,394] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:11,394] {logging_mixin.py:104} INFO - filename OLLI
+[2021-03-23 20:25:11,813] {logging_mixin.py:104} INFO - s3key files/OTCM
+[2021-03-23 20:25:11,813] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:11,813] {logging_mixin.py:104} INFO - filename OTCM
+[2021-03-23 20:25:11,977] {logging_mixin.py:104} INFO - s3key files/PD
+[2021-03-23 20:25:11,978] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:11,978] {logging_mixin.py:104} INFO - filename PD
+[2021-03-23 20:25:12,224] {logging_mixin.py:104} INFO - s3key files/REDU
+[2021-03-23 20:25:12,225] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:12,226] {logging_mixin.py:104} INFO - filename REDU
+[2021-03-23 20:25:12,496] {logging_mixin.py:104} INFO - s3key files/REI
+[2021-03-23 20:25:12,496] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:12,496] {logging_mixin.py:104} INFO - filename REI
+[2021-03-23 20:25:12,667] {logging_mixin.py:104} INFO - s3key files/SBUX
+[2021-03-23 20:25:12,667] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:12,668] {logging_mixin.py:104} INFO - filename SBUX
+[2021-03-23 20:25:12,911] {logging_mixin.py:104} INFO - s3key files/SLRX
+[2021-03-23 20:25:12,911] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:12,912] {logging_mixin.py:104} INFO - filename SLRX
+[2021-03-23 20:25:13,404] {logging_mixin.py:104} INFO - s3key files/SMAR
+[2021-03-23 20:25:13,404] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:13,404] {logging_mixin.py:104} INFO - filename SMAR
+[2021-03-23 20:25:13,737] {logging_mixin.py:104} INFO - s3key files/STKS
+[2021-03-23 20:25:13,737] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:13,737] {logging_mixin.py:104} INFO - filename STKS
+[2021-03-23 20:25:14,009] {logging_mixin.py:104} INFO - s3key files/TITN
+[2021-03-23 20:25:14,009] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:14,009] {logging_mixin.py:104} INFO - filename TITN
+[2021-03-23 20:25:14,247] {logging_mixin.py:104} INFO - s3key files/UNP
+[2021-03-23 20:25:14,247] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:14,247] {logging_mixin.py:104} INFO - filename UNP
+[2021-03-23 20:25:14,591] {logging_mixin.py:104} INFO - s3key files/URGN
+[2021-03-23 20:25:14,591] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:14,592] {logging_mixin.py:104} INFO - filename URGN
+[2021-03-23 20:25:14,834] {logging_mixin.py:104} INFO - s3key files/UTZ
+[2021-03-23 20:25:14,834] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:14,834] {logging_mixin.py:104} INFO - filename UTZ
+[2021-03-23 20:25:15,216] {logging_mixin.py:104} INFO - s3key files/VIVE
+[2021-03-23 20:25:15,216] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:15,216] {logging_mixin.py:104} INFO - filename VIVE
+[2021-03-23 20:25:15,405] {logging_mixin.py:104} INFO - s3key files/VOLT
+[2021-03-23 20:25:15,406] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:15,406] {logging_mixin.py:104} INFO - filename VOLT
+[2021-03-23 20:25:15,688] {logging_mixin.py:104} INFO - s3key files/WB
+[2021-03-23 20:25:15,688] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:15,688] {logging_mixin.py:104} INFO - filename WB
+[2021-03-23 20:25:15,928] {logging_mixin.py:104} INFO - s3key files/WPM
+[2021-03-23 20:25:15,928] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:15,928] {logging_mixin.py:104} INFO - filename WPM
+[2021-03-23 20:25:16,170] {logging_mixin.py:104} INFO - s3key files/WSM
+[2021-03-23 20:25:16,170] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:16,170] {logging_mixin.py:104} INFO - filename WSM
+[2021-03-23 20:25:16,525] {logging_mixin.py:104} INFO - s3key files/XOG
+[2021-03-23 20:25:16,525] {logging_mixin.py:104} INFO - path files
+[2021-03-23 20:25:16,525] {logging_mixin.py:104} INFO - filename XOG
+[2021-03-23 20:25:16,735] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py
+[2021-03-23 20:25:16,760] {scheduler_job.py:190} INFO - Processing /Users/prathyusha/Desktop/pranathi/Assignment2/airflow_edgar/dags/test.py took 18.566 seconds

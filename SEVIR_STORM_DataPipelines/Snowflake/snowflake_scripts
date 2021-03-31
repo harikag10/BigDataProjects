@@ -1,0 +1,163 @@
+show databases
+show schemas
+use  schema weather.storm
+select current_role();
+
+#drop table storm_details
+create table storm_details(BEGIN_YEARMONTH int, BEGIN_DAY int, BEGIN_TIME int, END_YEARMONTH int,END_DAY int,END_TIME int, EPISODE_ID int,EVENT_ID int,STATE varchar(50),STATE_FIPS int,
+  YEAR int, MONTH_NAME varchar(50), EVENT_TYPE varchar(50), CZ_TYPE varchar(50),CZ_FIPS int ,CZ_NAME varchar(500),
+       WFO varchar(50), BEGIN_DATE_TIME varchar(100),CZ_TIMEZONE varchar(10), END_DATE_TIME varchar(100),
+       INJURIES_DIRECT bigint, INJURIES_INDIRECT bigint,DEATHS_DIRECT bigint,
+       DEATHS_INDIRECT bigint, DAMAGE_PROPERTY decimal(30,4), DAMAGE_CROPS decimal(30,4),SOURCE varchar(50),
+       MAGNITUDE decimal(6,2), MAGNITUDE_TYPE varchar(50), FLOOD_CAUSE varchar(50), CATEGORY varchar(50), TOR_F_SCALE varchar(50),
+       TOR_LENGTH varchar(50),TOR_WIDTH varchar(50), TOR_OTHER_WFO varchar(50), TOR_OTHER_CZ_STATE varchar(50),
+       TOR_OTHER_CZ_FIPS varchar(50), TOR_OTHER_CZ_NAME varchar(50), BEGIN_RANGE decimal(6,2),
+       BEGIN_AZIMUTH varchar(50), BEGIN_LOCATION varchar(50), END_RANGE decimal(6,2), END_AZIMUTH varchar(50),
+       END_LOCATION varchar(50), BEGIN_LAT decimal(18,4), BEGIN_LON decimal(18,4), END_LAT decimal(18,4), END_LON decimal(18,4),
+       EPISODE_NARRATIVE varchar(2000), EVENT_NARRATIVE varchar(2000), DATA_SOURCE varchar(50),eventid_new varchar(20))
+     
+
+copy into   storm_details   
+from s3://pranathibucket/storm/df_details_new.csv
+credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')  
+file_format = (type = csv field_delimiter = ',' skip_header = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '\042' 
+               EMPTY_FIELD_AS_NULL = TRUE NULL_IF = ('NULL','null','') BINARY_FORMAT = BASE64)
+--formatTypeOptions={ESCAPE=NONE};
+
+
+#drop table storm_fatalities
+ CREAte table storm_fatalities(FAT_YEARMONTH int, FAT_DAY int, FAT_TIME int , FATALITY_ID bigint, EVENT_ID bigint,
+                               FATALITY_TYPE varchar(50), FATALITY_DATE datetime, FATALITY_AGE decimal(6,2), FATALITY_SEX varchar(10)
+                               , FATALITY_LOCATION varchar(200),EVENT_YEARMONTH int)
+  
+  
+ copy into storm_fatalities from s3://pranathibucket/storm/df_fatalities_new.csv
+credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')  
+file_format = (type = csv field_delimiter = ',' skip_header = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '\042' 
+               EMPTY_FIELD_AS_NULL = TRUE NULL_IF = ('NULL','null','') BINARY_FORMAT = BASE64);
+
+#drop table storm_location
+CREATE TABLE storm_location(YEARMONTH int,EPISODE_ID int,EVENT_ID bigint,LOCATION_INDEX int,
+   RANGE decimal(6,2),AZIMUTH varchar(20),LOCATION varchar(50),LATITUDE decimal(18,4),LONGITUDE decimal(18,4) ,LAT2 bigint, LON2 bigint)
+
+
+
+copy into storm_location from s3://pranathibucket/storm/df_locations_new.csv
+credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')  
+file_format = (type = csv field_delimiter = ',' skip_header = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '\042' 
+  EMPTY_FIELD_AS_NULL = TRUE NULL_IF = ('NULL','null','') BINARY_FORMAT = BASE64);
+
+
+#drop table  catalog                          
+ CREATE TABLE catalog(id varchar(50),file_name varchar(100), file_index int, img_type varchar(20),time_utc datetime ,
+                      minute_offsets varchar(400),episode_id varchar(20),event_id bigint,event_type varchar(50),llcrnrlat decimal(18,4),
+                      llcrnrlon decimal(18,4),urcrnrlat decimal(18,4),urcrnrlon decimal(18,4),proj varchar(100),size_x int,size_y int,height_m decimal(18,4),
+                      width decimal(18,4),data_min  decimal(18,4),data_max decimal(18,4),pct_missing decimal(10,5))  
+
+
+
+copy into   catalog  
+from s3://pranathibucket/filtered_catalog.csv
+credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')  
+file_format = (type = csv field_delimiter = ',' skip_header = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '\042' 
+               EMPTY_FIELD_AS_NULL = TRUE NULL_IF = ('NULL','null','') BINARY_FORMAT = BASE64)
+        
+
+
+       
+#drop view storm_sevir_details
+create view storm_sevir_details(id ,file_name , file_index , img_type ,time_utc  ,
+                      minute_offsets ,cat_episode_id ,cat_event_id ,cat_event_type ,llcrnrlat ,
+                      llcrnrlon ,urcrnrlat ,urcrnrlon ,proj ,size_x ,size_y ,height_m ,
+                      width ,data_min  ,data_max ,pct_missing ,BEGIN_YEARMONTH , BEGIN_DAY , BEGIN_TIME , END_YEARMONTH ,END_DAY ,END_TIME ,
+                      det_EPISODE_ID ,det_EVENT_ID ,STATE ,STATE_FIPS ,
+  YEAR , MONTH_NAME , det_EVENT_TYPE , CZ_TYPE ,CZ_FIPS  ,CZ_NAME ,
+       WFO , BEGIN_DATE_TIME ,CZ_TIMEZONE , END_DATE_TIME ,
+       INJURIES_DIRECT , INJURIES_INDIRECT ,DEATHS_DIRECT ,
+       DEATHS_INDIRECT , DAMAGE_PROPERTY , DAMAGE_CROPS ,SOURCE ,
+       MAGNITUDE , MAGNITUDE_TYPE , FLOOD_CAUSE , CATEGORY , TOR_F_SCALE ,
+       TOR_LENGTH ,TOR_WIDTH , TOR_OTHER_WFO , TOR_OTHER_CZ_STATE ,
+       TOR_OTHER_CZ_FIPS , TOR_OTHER_CZ_NAME , BEGIN_RANGE ,
+       BEGIN_AZIMUTH , BEGIN_LOCATION , END_RANGE , END_AZIMUTH ,
+       END_LOCATION , BEGIN_LAT , BEGIN_LON , END_LAT , END_LON ,
+       EPISODE_NARRATIVE , EVENT_NARRATIVE , DATA_SOURCE,eventid_new) as (select id ,file_name , file_index , img_type ,time_utc  ,
+                      minute_offsets ,c.episode_id ,c.event_id ,c.event_type ,llcrnrlat ,
+                      llcrnrlon ,urcrnrlat ,urcrnrlon ,proj ,size_x ,size_y ,height_m ,
+                      width ,data_min  ,data_max ,pct_missing ,BEGIN_YEARMONTH , BEGIN_DAY , BEGIN_TIME , END_YEARMONTH ,END_DAY ,END_TIME , sd.EPISODE_ID ,sd.EVENT_ID ,
+                                STATE ,STATE_FIPS ,
+  YEAR , MONTH_NAME , sd.EVENT_TYPE , CZ_TYPE ,CZ_FIPS  ,CZ_NAME ,
+       WFO , BEGIN_DATE_TIME ,CZ_TIMEZONE , END_DATE_TIME ,
+       INJURIES_DIRECT , INJURIES_INDIRECT ,DEATHS_DIRECT ,
+       DEATHS_INDIRECT , DAMAGE_PROPERTY , DAMAGE_CROPS ,SOURCE ,
+       MAGNITUDE , MAGNITUDE_TYPE , FLOOD_CAUSE , CATEGORY , TOR_F_SCALE ,
+       TOR_LENGTH ,TOR_WIDTH , TOR_OTHER_WFO , TOR_OTHER_CZ_STATE ,
+       TOR_OTHER_CZ_FIPS , TOR_OTHER_CZ_NAME , BEGIN_RANGE ,
+       BEGIN_AZIMUTH , BEGIN_LOCATION , END_RANGE , END_AZIMUTH ,
+       END_LOCATION , BEGIN_LAT , BEGIN_LON , END_LAT , END_LON ,
+       EPISODE_NARRATIVE , EVENT_NARRATIVE , DATA_SOURCE,eventid_new  from "WEATHER"."STORM"."CATALOG"  c left join "WEATHER"."STORM"."STORM_DETAILS" sd
+                               on c.id=sd.eventid_new)
+                               
+ #drop view storm_fatalities_details                              
+create view storm_fatalities_details(FAT_YEARMONTH , FAT_DAY , FAT_TIME  , FATALITY_ID , FAT_EVENT_ID ,
+                               FATALITY_TYPE , FATALITY_DATE , FATALITY_AGE , FATALITY_SEX 
+                               , FATALITY_LOCATION ,EVENT_YEARMONTH ,BEGIN_YEARMONTH , BEGIN_DAY , BEGIN_TIME , END_YEARMONTH ,END_DAY ,END_TIME ,
+                      det_EPISODE_ID ,det_EVENT_ID ,STATE ,STATE_FIPS ,
+  YEAR , MONTH_NAME , det_EVENT_TYPE , CZ_TYPE ,CZ_FIPS  ,CZ_NAME ,
+       WFO , BEGIN_DATE_TIME ,CZ_TIMEZONE , END_DATE_TIME ,
+       INJURIES_DIRECT , INJURIES_INDIRECT ,DEATHS_DIRECT ,
+       DEATHS_INDIRECT , DAMAGE_PROPERTY , DAMAGE_CROPS ,SOURCE ,
+       MAGNITUDE , MAGNITUDE_TYPE , FLOOD_CAUSE , CATEGORY , TOR_F_SCALE ,
+       TOR_LENGTH ,TOR_WIDTH , TOR_OTHER_WFO , TOR_OTHER_CZ_STATE ,
+       TOR_OTHER_CZ_FIPS , TOR_OTHER_CZ_NAME , BEGIN_RANGE ,
+       BEGIN_AZIMUTH , BEGIN_LOCATION , END_RANGE , END_AZIMUTH ,
+       END_LOCATION , BEGIN_LAT , BEGIN_LON , END_LAT , END_LON ,
+       EPISODE_NARRATIVE , EVENT_NARRATIVE , DATA_SOURCE,eventid_new) as (select FAT_YEARMONTH , FAT_DAY , FAT_TIME  , FATALITY_ID , fat.EVENT_ID ,
+                               FATALITY_TYPE , FATALITY_DATE , FATALITY_AGE , FATALITY_SEX 
+                               , FATALITY_LOCATION ,EVENT_YEARMONTH,BEGIN_YEARMONTH , BEGIN_DAY , BEGIN_TIME , END_YEARMONTH ,END_DAY ,END_TIME , sd.EPISODE_ID ,sd.EVENT_ID ,
+                                STATE ,STATE_FIPS ,
+  YEAR , MONTH_NAME , sd.EVENT_TYPE , CZ_TYPE ,CZ_FIPS  ,CZ_NAME ,
+       WFO , BEGIN_DATE_TIME ,CZ_TIMEZONE , END_DATE_TIME ,
+       INJURIES_DIRECT , INJURIES_INDIRECT ,DEATHS_DIRECT ,
+       DEATHS_INDIRECT , DAMAGE_PROPERTY , DAMAGE_CROPS ,SOURCE ,
+       MAGNITUDE , MAGNITUDE_TYPE , FLOOD_CAUSE , CATEGORY , TOR_F_SCALE ,
+       TOR_LENGTH ,TOR_WIDTH , TOR_OTHER_WFO , TOR_OTHER_CZ_STATE ,
+       TOR_OTHER_CZ_FIPS , TOR_OTHER_CZ_NAME , BEGIN_RANGE ,
+       BEGIN_AZIMUTH , BEGIN_LOCATION , END_RANGE , END_AZIMUTH ,
+       END_LOCATION , BEGIN_LAT , BEGIN_LON , END_LAT , END_LON ,
+       EPISODE_NARRATIVE , EVENT_NARRATIVE , DATA_SOURCE,eventid_new  from "WEATHER"."STORM"."STORM_FATALITIES"  fat 
+                                                                          left join "WEATHER"."STORM"."STORM_DETAILS" sd
+                               on fat.EVENT_ID=sd.event_id)
+                               
+   
+#drop view storm_location_details 
+create view storm_location_details(YEARMONTH ,LOC_EPISODE_ID ,LOC_EVENT_ID ,LOCATION_INDEX ,
+  RANGE ,AZIMUTH ,LOCATION ,LATITUDE ,LONGITUDE  ,LAT2 , LON2,BEGIN_YEARMONTH , BEGIN_DAY , BEGIN_TIME , END_YEARMONTH ,END_DAY ,END_TIME ,
+                      det_EPISODE_ID ,det_EVENT_ID ,STATE ,STATE_FIPS ,
+  YEAR , MONTH_NAME , det_EVENT_TYPE , CZ_TYPE ,CZ_FIPS  ,CZ_NAME ,
+       WFO , BEGIN_DATE_TIME ,CZ_TIMEZONE , END_DATE_TIME ,
+       INJURIES_DIRECT , INJURIES_INDIRECT ,DEATHS_DIRECT ,
+       DEATHS_INDIRECT , DAMAGE_PROPERTY , DAMAGE_CROPS ,SOURCE ,
+       MAGNITUDE , MAGNITUDE_TYPE , FLOOD_CAUSE , CATEGORY , TOR_F_SCALE ,
+       TOR_LENGTH ,TOR_WIDTH , TOR_OTHER_WFO , TOR_OTHER_CZ_STATE ,
+       TOR_OTHER_CZ_FIPS , TOR_OTHER_CZ_NAME , BEGIN_RANGE ,
+       BEGIN_AZIMUTH , BEGIN_LOCATION , END_RANGE , END_AZIMUTH ,
+       END_LOCATION , BEGIN_LAT , BEGIN_LON , END_LAT , END_LON ,
+       EPISODE_NARRATIVE , EVENT_NARRATIVE , DATA_SOURCE,eventid_new)as (select YEARMONTH ,loc.EPISODE_ID ,loc.EVENT_ID ,LOCATION_INDEX ,
+  RANGE ,AZIMUTH ,LOCATION ,LATITUDE ,LONGITUDE  ,LAT2 , LON2,BEGIN_YEARMONTH , BEGIN_DAY , BEGIN_TIME , END_YEARMONTH ,END_DAY ,END_TIME , sd.EPISODE_ID ,sd.EVENT_ID ,
+                                STATE ,STATE_FIPS ,
+  YEAR , MONTH_NAME , sd.EVENT_TYPE , CZ_TYPE ,CZ_FIPS  ,CZ_NAME ,
+       WFO , BEGIN_DATE_TIME ,CZ_TIMEZONE , END_DATE_TIME ,
+       INJURIES_DIRECT , INJURIES_INDIRECT ,DEATHS_DIRECT ,
+       DEATHS_INDIRECT , DAMAGE_PROPERTY , DAMAGE_CROPS ,SOURCE ,
+       MAGNITUDE , MAGNITUDE_TYPE , FLOOD_CAUSE , CATEGORY , TOR_F_SCALE ,
+       TOR_LENGTH ,TOR_WIDTH , TOR_OTHER_WFO , TOR_OTHER_CZ_STATE ,
+       TOR_OTHER_CZ_FIPS , TOR_OTHER_CZ_NAME , BEGIN_RANGE ,
+       BEGIN_AZIMUTH , BEGIN_LOCATION , END_RANGE , END_AZIMUTH ,
+       END_LOCATION , BEGIN_LAT , BEGIN_LON , END_LAT , END_LON ,
+       EPISODE_NARRATIVE , EVENT_NARRATIVE , DATA_SOURCE,eventid_new  from "WEATHER"."STORM"."STORM_LOCATION"  loc left join "WEATHER"."STORM"."STORM_DETAILS" sd
+                               on loc.EVENT_ID=sd.EVENT_ID)
+                               
+                               
+
+
+

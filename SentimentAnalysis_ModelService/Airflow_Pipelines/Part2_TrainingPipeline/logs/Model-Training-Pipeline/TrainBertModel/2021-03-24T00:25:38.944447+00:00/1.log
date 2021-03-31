@@ -1,0 +1,42 @@
+[2021-03-23 20:26:01,243] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.TrainBertModel 2021-03-24T00:25:38.944447+00:00 [queued]>
+[2021-03-23 20:26:01,259] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Model-Training-Pipeline.TrainBertModel 2021-03-24T00:25:38.944447+00:00 [queued]>
+[2021-03-23 20:26:01,259] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 20:26:01,259] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-23 20:26:01,260] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 20:26:01,272] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): TrainBertModel> on 2021-03-24T00:25:38.944447+00:00
+[2021-03-23 20:26:01,277] {standard_task_runner.py:52} INFO - Started process 14331 to run task
+[2021-03-23 20:26:01,290] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Model-Training-Pipeline', 'TrainBertModel', '2021-03-24T00:25:38.944447+00:00', '--job-id', '44', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/train.py', '--cfg-path', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmp6ak3g0k6', '--error-file', '/var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tmpmm09moha']
+[2021-03-23 20:26:01,294] {standard_task_runner.py:77} INFO - Job 44: Subtask TrainBertModel
+[2021-03-23 20:26:01,357] {logging_mixin.py:104} INFO - Running <TaskInstance: Model-Training-Pipeline.TrainBertModel 2021-03-24T00:25:38.944447+00:00 [running]> on host 152.1.168.192.in-addr.arpa
+[2021-03-23 20:26:01,401] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Model-Training-Pipeline
+AIRFLOW_CTX_TASK_ID=TrainBertModel
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-24T00:25:38.944447+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-24T00:25:38.944447+00:00
+[2021-03-23 20:26:01,409] {logging_mixin.py:104} INFO - Found 7 files belonging to 2 classes.
+[2021-03-23 20:26:01,512] {logging_mixin.py:104} INFO - Using 6 files for training.
+[2021-03-23 20:26:01,590] {logging_mixin.py:104} INFO - Found 7 files belonging to 2 classes.
+[2021-03-23 20:26:01,691] {logging_mixin.py:104} INFO - Using 1 files for validation.
+[2021-03-23 20:26:01,714] {logging_mixin.py:104} INFO - Found 2 files belonging to 2 classes.
+[2021-03-23 20:26:01,847] {logging_mixin.py:104} INFO - BERT model selected: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-512_A-8/1
+[2021-03-23 20:26:01,847] {logging_mixin.py:104} INFO - Preprocess model auto-selected: https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3
+[2021-03-23 20:26:01,864] {resolver.py:106} INFO - Using /var/folders/j6/755w2l7n4x1c9313788klj880000gq/T/tfhub_modules to cache modules.
+[2021-03-23 20:26:37,597] {optimization.py:89} INFO - using Adamw optimizer
+[2021-03-23 20:26:37,599] {optimization.py:142} INFO - gradient_clip_norm=1.000000
+[2021-03-23 20:26:37,616] {logging_mixin.py:104} INFO - Training model with https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-512_A-8/1
+[2021-03-23 20:27:02,822] {logging_mixin.py:104} INFO - 1/1 [==============================] - ETA: 0s - loss: 0.4876 - binary_accuracy: 0.6667
+[2021-03-23 20:27:05,865] {logging_mixin.py:104} INFO - 1/1 [==============================] - 28s 28s/step - loss: 0.4876 - binary_accuracy: 0.6667 - val_loss: 0.7319 - val_binary_accuracy: 0.0000e+00
+[2021-03-23 20:27:06,023] {logging_mixin.py:104} INFO - 1/1 [==============================] - ETA: 0s - loss: 0.3247 - binary_accuracy: 1.0000
+[2021-03-23 20:27:06,024] {logging_mixin.py:104} INFO - 1/1 [==============================] - 0s 156ms/step - loss: 0.3247 - binary_accuracy: 1.0000
+[2021-03-23 20:27:06,025] {logging_mixin.py:104} INFO - Loss: 0.3247162401676178
+[2021-03-23 20:27:06,025] {logging_mixin.py:104} INFO - Accuracy: 1.0
+[2021-03-23 20:27:15,006] {save.py:241} WARNING - Found untraced functions such as restored_function_body, restored_function_body, restored_function_body, restored_function_body, restored_function_body while saving (showing 5 of 310). These functions will not be directly callable after loading.
+[2021-03-23 20:27:15,342] {save.py:241} WARNING - Found untraced functions such as restored_function_body, restored_function_body, restored_function_body, restored_function_body, restored_function_body while saving (showing 5 of 310). These functions will not be directly callable after loading.
+[2021-03-23 20:27:27,020] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-23 20:27:27,036] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=Model-Training-Pipeline, task_id=TrainBertModel, execution_date=20210324T002538, start_date=20210324T002601, end_date=20210324T002727
+[2021-03-23 20:27:27,081] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-23 20:27:27,191] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2021-03-23 20:27:27,221] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 14331

@@ -1,0 +1,28 @@
+dev:
+
+  bucket: "edgarfile-storage"
+
+  downloadpath: "/Users/prathyusha/Desktop/pranathi/CSYE7245-Spring2021-Labs/transcript-simulated-api"
+
+  fetchpath: "/Users/prathyusha/Desktop/pranathi/CSYE7245-Spring2021-Labs/transcript-simulated-api/edgar_download"
+
+  APIKey: "f91e8d2d0a74487dbec98f4b8b302711"
+
+  aws_access_key_id: "AKIA4DTCQWNVOEHGVTH3"
+
+  aws_secret_access_key: "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"
+
+  FlaskUrl: "https://sentiment-zi7kg63pga-ue.a.run.app/predict"
+
+  fileinput:
+    object_key: "CompaniesList.csv"
+    prefix: "Part4/input"
+
+  stage: 
+    object_key: "CompaniesCallData.csv"
+    prefix: "Part4/stage"
+
+  final:
+    sentiment_key: "Sentiments.csv"
+    prefix: "Part4/final"
+
